@@ -1,0 +1,84 @@
+#app {
+  display: grid;
+  grid-template-columns: repeat(24, [col-start] 1fr);  
+  grid-template-rows: repeat(24, [row-start] 1fr);
+  grid-template-areas:
+    'header'
+    'content'
+    ;
+}
+
+.navigation {
+  grid-area: header;
+}
+
+.main-content {
+  grid-area: content;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-overlay {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mobileToggle {
+  opacity: 1 !important;
+}
+
+.bg-text {
+  color: $dark-gray;
+  font-size: 10em;
+  font-family: $sub-font;
+  font-weight: 400;
+}
+
+.btn {
+  color: $main;
+  padding: 8px 12px;
+  border: 1px solid $main;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all 0.5s ease;
+  &:hover {
+    background: $main;
+    color: $white;
+  }
+}
+
+.buttons {
+  padding-top: 20px;
+  display: inline-block;
+
+  .btn {
+    color: $main;
+    padding: 8px 12px;
+    border: 1px solid $main;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.5s ease;
+  }
+
+  .project {
+    border-radius: 4px;
+
+    &:hover {
+      background: $main;
+      color: $white;
+    }
+  }
+
+  span {
+    background: $black;
+    color: $light-gray;
+    padding: 8px;
+    border-radius: 50%;
+  }
+}
