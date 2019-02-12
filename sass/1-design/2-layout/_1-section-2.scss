@@ -245,7 +245,7 @@
         }
 
         .overlay {
-          background: rgba($main, 0.8);          
+          background: rgba($main, 0.8);
           position: absolute;
           top: 5.5%;
           width: 94%;
@@ -285,15 +285,16 @@
           }
         }
       }
+
       &-contact {
         margin: 0 10px;
 
         form {
-          
+
           .contact-content {
             position: absolute;
             top: 75%;
-    
+
             span {
               color: $white;
               margin-bottom: 20px;
@@ -302,7 +303,7 @@
               letter-spacing: 3px;
             }
           }
-    
+
           label {
             font-family: $main-font;
           }
@@ -593,6 +594,7 @@
         h1 {
           font-size: 6.5em;
         }
+
         .projects {
           position: absolute;
           top: 70%;
@@ -604,7 +606,7 @@
         }
 
         .overlay {
-          background: rgba($main, 0.8);          
+          background: rgba($main, 0.8);
           position: absolute;
           top: 3%;
           width: 97%;
@@ -645,19 +647,21 @@
           }
         }
       }
+
       &-contact {
         margin: 100px 10px 0 10px;
 
         form {
-          
+
           .contact-text {
             h1 {
               font-size: 6em;
             }
+
             .contact-content {
               position: absolute;
               top: 75%;
-      
+
               span {
                 color: $white;
                 margin-bottom: 20px;
@@ -667,7 +671,7 @@
               }
             }
           }
-    
+
           label {
             font-family: $main-font;
           }
@@ -953,7 +957,7 @@
 
     .button {
       position: fixed;
-      top: 5%;
+      top: 0;
       right: 2%;
       width: 60px;
       height: 27px;
