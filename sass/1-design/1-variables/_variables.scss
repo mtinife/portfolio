@@ -2,32 +2,19 @@
 //TYPOGRAPHY                   //
 //*****************************//
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Roboto:400,500,700,900");
-$main-font: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial,
-  sans-serif;
+$main-font: "Roboto",
+"Franklin Gothic Medium",
+"Arial Narrow",
+Arial,
+sans-serif;
 
-$sub-font: "Great Vibes", "Franklin Gothic Medium", "Arial Narrow", Arial,
-  sans-serif;
+$sub-font: "Great Vibes",
+"Franklin Gothic Medium",
+"Arial Narrow",
+Arial,
+sans-serif;
 //*****************************//
 //END/TYPOGRAPHY               //
-//*****************************//
-
-//*****************************//
-//BACKGROUND                   //
-//*****************************//
-body {
-  background: $black;
-  background-image: url("/dist/images/navy.png");
-  font-family: $main-font;
-}
-
-#app {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-}
-
-//*****************************//
-//END/BACKGROUND               //
 //*****************************//
 
 //*****************************//
@@ -42,6 +29,23 @@ $light-gray: #939393;
 
 //*****************************//
 //END/COLOR                    //
+//*****************************//
+
+//*****************************//
+//BACKGROUND                   //
+//*****************************//
+
+body {
+    background: $black;
+    background-image: url("/dist/images/navy.png");
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: $main-font;
+}
+
+//*****************************//
+//END/BACKGROUND               //
 //*****************************//
 
 //*****************************//
