@@ -87,15 +87,12 @@ body {
 }
 
 body {
-  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-#app {
-  background: #000;
+  background: #000000;
   background-image: url("/dist/images/navy.png");
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #app {
@@ -154,7 +151,7 @@ body {
 
 .btn:hover {
   background: #db162f;
-  color: #fff;
+  color: #ffffff;
 }
 
 .buttons {
@@ -180,11 +177,11 @@ body {
 
 .buttons .project:hover {
   background: #db162f;
-  color: #fff;
+  color: #ffffff;
 }
 
 .buttons span {
-  background: #000;
+  background: #000000;
   color: #939393;
   padding: 8px;
   border-radius: 50%;
@@ -236,7 +233,7 @@ body {
   .navigation .side-navbar .menuOne span {
     width: 5px;
     height: 5px;
-    background-color: #fff;
+    background-color: #ffffff;
     display: block;
     border-radius: 50%;
   }
@@ -361,7 +358,7 @@ body {
     left: 3%;
   }
   .main-content .page-home .home-text h2 {
-    color: #fff;
+    color: #ffffff;
     padding: 5px 0;
     font-size: 36px;
     font-weight: bold;
@@ -386,7 +383,7 @@ body {
   }
   .main-content .page-about .about-text .about-content p {
     padding-bottom: 10px;
-    color: #fff;
+    color: #ffffff;
     font-size: 13px;
     letter-spacing: 3px;
   }
@@ -425,7 +422,7 @@ body {
     font-weight: bold;
   }
   .main-content .page-work .overlay-text .left {
-    color: #fff;
+    color: #ffffff;
     padding-left: 50%;
   }
   .main-content .page-work .overlay-text .left i {
@@ -445,7 +442,7 @@ body {
     top: 75%;
   }
   .main-content .page-contact form .contact-content span {
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: 700;
@@ -483,12 +480,12 @@ body {
   }
   .mobile-navbar-container .mobile-navbar a {
     z-index: 9999;
-    color: #fff;
+    color: #ffffff;
     display: block;
     padding: 10px 20px;
   }
   .mobile-navbar-container .mobile-navbar a:hover {
-    background: #fff;
+    background: #ffffff;
     color: #db162f;
   }
 }
@@ -539,7 +536,7 @@ body {
   .navigation .side-navbar .menuOne span {
     width: 5px;
     height: 5px;
-    background-color: #fff;
+    background-color: #ffffff;
     display: block;
     border-radius: 50%;
   }
@@ -664,7 +661,7 @@ body {
     left: 3%;
   }
   .main-content .page-home .home-text h2 {
-    color: #fff;
+    color: #ffffff;
     padding: 5px 0;
     font-size: 36px;
     font-weight: bold;
@@ -690,7 +687,7 @@ body {
   }
   .main-content .page-about .about-text .about-content p {
     padding-bottom: 10px;
-    color: #fff;
+    color: #ffffff;
     font-size: 13px;
     letter-spacing: 3px;
   }
@@ -733,7 +730,7 @@ body {
     text-align: center;
   }
   .main-content .page-work .overlay-text .left {
-    color: #fff;
+    color: #ffffff;
     padding: 80px 0 0 70.5%;
   }
   .main-content .page-work .overlay-text .left i {
@@ -756,7 +753,7 @@ body {
     top: 75%;
   }
   .main-content .page-contact form .contact-text .contact-content span {
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: 700;
@@ -796,12 +793,12 @@ body {
   }
   .mobile-navbar-container .mobile-navbar a {
     z-index: 9999;
-    color: #fff;
+    color: #ffffff;
     display: block;
     padding: 10px 20px;
   }
   .mobile-navbar-container .mobile-navbar a:hover {
-    background: #fff;
+    background: #ffffff;
     color: #db162f;
   }
 }
@@ -840,7 +837,7 @@ body {
     text-align: center;
   }
   .navigation .side-navbar .nav a {
-    color: #000;
+    color: #000000;
     position: relative;
     width: 100%;
     font-size: 22px;
@@ -853,7 +850,7 @@ body {
     transition: all 0.5s ease;
   }
   .navigation .side-navbar .nav a:hover {
-    color: #fff;
+    color: #ffffff;
   }
   .navigation .side-navbar .nav a span {
     padding-bottom: 10px;
@@ -871,7 +868,7 @@ body {
     text-align: center;
   }
   .navigation .side-navbar ul a {
-    color: #000;
+    color: #000000;
     padding: 7px 0;
     display: block;
     font-size: 15px;
@@ -879,7 +876,7 @@ body {
     transition: all 0.5s ease;
   }
   .navigation .side-navbar ul a:hover {
-    color: #fff;
+    color: #ffffff;
   }
   .main-content {
     grid-column: col-start 2 / span 25;
@@ -907,7 +904,7 @@ body {
     top: 50%;
   }
   .main-content .page-home .home-text h2 {
-    color: #fff;
+    color: #ffffff;
     padding: 5px 0;
     font-size: 56px;
     font-weight: bold;
@@ -935,7 +932,7 @@ body {
   }
   .main-content .page-about .about-text .about-content p {
     padding-bottom: 10px;
-    color: #fff;
+    color: #ffffff;
     font-size: 13px;
     letter-spacing: 3px;
   }
@@ -969,7 +966,7 @@ body {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: lf;
-    color: #fff;
+    color: #ffffff;
     position: relative;
     opacity: 0;
     -webkit-transition: all 0.5s ease;
@@ -989,7 +986,7 @@ body {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: rt;
-    color: #fff;
+    color: #ffffff;
     position: relative;
     opacity: 0;
     -webkit-transition: all 0.5s ease;
@@ -1011,7 +1008,7 @@ body {
   }
   .contact-area .button {
     position: fixed;
-    top: 5%;
+    top: 0;
     right: 2%;
     width: 60px;
     height: 27px;
@@ -1021,7 +1018,7 @@ body {
     z-index: 9999;
   }
   .contact-area .button span {
-    color: #fff;
+    color: #ffffff;
     position: absolute;
     top: 0;
     left: 0;
@@ -1041,7 +1038,7 @@ body {
     transition: all 1s ease;
   }
   .contact-area .button span:last-child:hover {
-    color: #fff;
+    color: #ffffff;
   }
   .contact-area .button span p {
     font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -1064,9 +1061,9 @@ body {
     max-width: 640px;
   }
   .contact-area .overlay-contact .container form .btn {
-    color: #fff;
+    color: #ffffff;
     padding: 8px 12px;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     font-size: 11px;
     text-decoration: none;
     text-transform: uppercase;
@@ -1085,7 +1082,7 @@ body {
     padding: 0 0 20px 0;
   }
   .contact-area .overlay-contact .container form .contact-content span {
-    color: #fff;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 3px;
