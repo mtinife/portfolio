@@ -38,10 +38,13 @@ $light-gray: #939393;
 body {
     background: $black;
     background-image: url("/dist/images/navy.png");
+    font-family: $main-font;
+}
+
+#app {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    font-family: $main-font;
 }
 
 //*****************************//

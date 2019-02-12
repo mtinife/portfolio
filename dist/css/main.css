@@ -89,10 +89,13 @@ body {
 body {
   background: #000000;
   background-image: url("/dist/images/navy.png");
+  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#app {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #app {
@@ -1008,7 +1011,7 @@ body {
   }
   .contact-area .button {
     position: fixed;
-    top: 0;
+    top: 5%;
     right: 2%;
     width: 60px;
     height: 27px;
