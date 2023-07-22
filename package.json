@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Micah Tinife personal portfolio",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
@@ -11,14 +11,16 @@
     "url": "git+https://github.com/mtinife/portfolio.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Micah Tinife <micahking2k@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mtinife/portfolio/issues"
   },
   "homepage": "https://github.com/mtinife/portfolio",
   "dependencies": {
     "animate.css": "^3.7.0",
+    "firebase": "^10.1.0",
     "gh-pages": "^2.0.1"
-  }
+  },
+  "devDependencies": {}
 }

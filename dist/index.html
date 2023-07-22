@@ -5,167 +5,197 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
   <title>Micah M. Tinife | Front-end Developer - Full-Stack Developer</title>
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-  <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <section id="app">
-    <aside class="navigation">
-      <div class="side-navbar">
-        <a href="index.html" class="logo-nav">
-          <img src="./images/Lion Logo2.png" alt="" />
-        </a>
-        <nav class="nav">
-          <a href="index.html">
-            <i class="fab fa-fort-awesome"></i> <span>Home</span>
-          </a>
-          <a href="about.html">
-            <i class="fab fa-ello"></i> <span>About</span>
-          </a>
-          <a href="work.html">
-            <i class="fas fa-dumbbell"></i> <span>Work</span>
-          </a>
-        </nav>
-        <ul>
-          <li>
-            <a href="#" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/mtinife" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="menuOne" id="navMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+  <header class="navFloat" style="display:none;">
+    <ul class="navFloat__socials float-layer-1s">
+      <li><a class="float-layer-s" href="#"><i class="ri-github-fill"></i></a></li>
+      <li><a class="float-layer-s" href="#"><i class="ri-linkedin-box-fill"></i></a></li>
+    </ul>
+    <nav class="navFloat__navbar float-layer-1">
+      <div class="float-layer-menu">
+        <img src="images/mylogo.png" alt="" width="25px">
+        <span style="display: block;">menu</span>
+        <i class="ri-menu-line"></i>
+      </div>
+      <ul class="float-layer-2">
+        <li><a class="float-layer-b" href="#">Home</a></li>
+        <li><a class="float-layer-b" href="#">Projects</a></li>
+        <li><a class="float-layer-b" href="#">About</a></li>
+        <li><a class="float-layer-b" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <ul class="navFloat__top float-layer-1s">
+      <li><a class="float-layer-s" href="#"><i class="ri-arrow-up-s-line"></i></a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="bg-img"><img src="images/mylogo.png" alt=""></div>
+    <section class="home">
+      <div class="home__container">
+        <div class="home__circle">
+          <div class="home__circle__inner">
+            <div class="home__circle__white">
+              <img src="./images/mylogo.png" alt="">
+            </div>
+          </div>
         </div>
       </div>
-    </aside>
-    <main class="main-content">
-      <div class="logo-bg"><img src="./images/Lion Logo2.png" alt="" /></div>
-      <section class="content top-front">
-        <div class="container">
-          <h1>Welcome!</h1>
-          <div>
-            <h2 class="content-text">
-              I'm Micah, <br />
-              Web Developer.
-            </h2>
-            <div class="sub-text">
-              Full-stack Developer | CMS Developer
+    </section>
+    <section class="projects">
+      <div class="cool-circles">
+        <div class="cool-circle-outer">
+          <div class="cool-circle-inner">
+            If you see this, Hello!!
+          </div>
+        </div>
+      </div>
+      <div class="project__content container">
+        <h2 class="heading-size-1">Projects</h2>
+       <section class="splide">
+        <div class="splide__slider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide project__content__item">
+                <img class="project__content__img" src="images/wlc.jpg" alt="">
+                <div class="project__overlay">
+                  <p class="para-size-2">website</p>
+                  <h4 class="heading-size-2">We Love Code Theme</h4>
+                </div>
+</li>
+              <li class="splide__slide project__content__item">
+                <img class="project__content__img" src="images/wlc.jpg" alt="">
+                <div class="project__overlay">
+                  <p class="para-size-2">website</p>
+                  <h4 class="heading-size-2">We Love Code Theme</h4>
+                </div>
+              </li>
+              <li class="splide__slide project__content__item">
+                <img class="project__content__img" src="images/wlc.jpg" alt="">
+                <div class="project__overlay">
+                  <p class="para-size-2">website</p>
+                  <h4 class="heading-size-2">We Love Code Theme</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="splide__progress">
+          <div class="splide__progress__bar">
+          </div>
+        </div>
+        <button class="splide__toggle" type="button">
+          <i class="ri-play-line splide__toggle__play"></i>
+          <i class="ri-pause-line splide__toggle__pause"></i>
+        </button>
+      </section> 
+      <section class="moreProjects">
+        <div class="moreProjects__item">
+          <div class="moreProjects__item__status finished-project">Finished</div>
+          <div class="moreProjects__item__content">
+            <div class="curve-corner"></div>
+            <div class="project-details">
+              <h6 class="heading-size-3">project 3</h6>
+              <span class="card-sub">Front-End Project - Jan 2017</span>
             </div>
-            <div class="home-proj">
-              <a href="work.html" class="btn">View Projects</a>
+          </div>
+        </div>
+        <div class="moreProjects__item">
+          <div class="moreProjects__item__status finished-project">Finished</div>
+          <div class="moreProjects__item__content">
+            <div class="curve-corner"></div>
+            <div class="project-details">
+              <h6 class="heading-size-3">project 3</h6>
+              <span class="card-sub">Front-End Project - Jan 2017</span>
+            </div>
+          </div>
+        </div>
+        <div class="moreProjects__item">
+          <div class="moreProjects__item__status ongoing-project">Ongoing...</div>
+          <div class="moreProjects__item__content">
+            <div class="curve-corner"></div>
+            <div class="project-details">
+              <h6 class="heading-size-3">project 3</h6>
+              <span class="card-sub">Front-End Project - Jan 2017</span>
             </div>
           </div>
         </div>
       </section>
-    </main>
-  </section>
-  <section class="contact-area">
-    <div class="button">
-      <span class="contact-close"><i class="far fa-envelope"></i>
-        <p>Exit</p>
-      </span>
-      <span class="contact-open"><i class="far fa-envelope-open"></i>
-        <p>Contact</p>
-      </span>
-    </div>
-    <div class="overlay-contact">
-      <div class="container">
-        <form>
-          <div class="content">
-            <h1>Contact me</h1>
-            <div class="contact-content top-contact">
-              <span>ALways a pleasure to meet and help people and businesses,
-                please feel free to reach out. I dont bite :)</span>
-              <div class="field">
-                <label class="label has-text-white">Name</label>
-                <div class="control has-icons-left">
-                  <input class="input" type="text" placeholder="Name" />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label has-text-white">Phone Number</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" type="text" placeholder="Phone Number" />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-phone"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label has-text-white">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" type="email" placeholder="example@gmail.com" />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label has-text-white">Subject</label>
-                <div class="control">
-                  <div class="select">
-                    <select>
-                      <option>Hire me</option>
-                      <option>Web Development</option>
-                      <option>Web Design</option>
-                      <option>CMS Wordpress / Drupal</option>
-                      <option>SEO</option>
-                      <Option>Issues and inquiries</Option>
-                      <option>Other</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label has-text-white">Message</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="What can I do for you?"></textarea>
-                </div>
-              </div>
-              <a href="#" class="btn">Send</a>
-            </div>
-          </div>
-        </form>
       </div>
-    </div>
-  </section>
-  <div class="mobile-navbar-container">
-    <span class="triangle-up"></span>
-    <nav class="mobile-navbar">
-      <a href="index.html">
-        <i class="fab fa-fort-awesome"></i> <span>Home</span>
-      </a>
-      <a href="about.html">
-        <i class="fab fa-ello"></i> <span>About</span>
-      </a>
-      <a href="work.html">
-        <i class="fas fa-dumbbell"></i> <span>Work</span>
-      </a>
-      <a href="contact.html"><i class="fas fa-phone"></i> <span>Contact</span></a>
-    </nav>
-  </div>
+    </section>
+    <section class="about">
+      <div class="about-circle">
+        <div class="about-circle-outer">
+          <img src="images/pic.jpg" alt="">
+        </div>
+      </div>
+      <section class="about__content container">
+        <div style="text-transform: uppercase;">
+        <p class="para-size-1">Hi, my name is micah tinife.</p>
+        <p class="para-size-1">I am a front-end Developer.</p>
+        </div>
+        <h2 class="heading-size-1">A blend of design and code</h2>
+        <p style="padding-right: 8.3em;" class="para-size-1">I love creating software and ditgital experiences that solve problems, showcase ideas or function well.</p>
+      </section>
+    </section>
+    <section class="contact">
+      <div class="contact-circle-outer"></div>
+      <div class="contact__content container">
+        <h2 class="heading-size-1 text-center">get in touch</h2>
+        <div class="contact__content__inner">
+        <div class="contact__content__left">
+          <div class="contact__content__left__top">  
+            <p class="para-size-2">How can I help you?</p>
+            <p class="para-size-2">If you have any questions please fill out the form. Thanks!</p>
+          </div>
+          <div class="contact__content__left__bottom">
+            <h4 class="heading-size-2">external point of contact</h4>
+            <ul>
+              <li class="para-size-2"><p>email</p><a href="#">hello@micahtinife.com</a></li>
+              <li class="para-size-2"><p>github</p><a href="#">micahtinife</a></li>
+            </ul>
+          </div>        
+        </div>
+        <div class="contact__content__right">
+          <form>
+            <input type="text" name="fullname" placeholder="Full Name">
+            <input type="text" name="email" placeholder="Email Address">
+            <input type="text" name="company" placeholder="Full Name">
+            <select id="cars" name="cars">
+              <option value="">--Select--</option>
+              <option value="Hire">Hire</option>
+              <option value="freelance">Freelance</option>
+              <option value="colab">Project Colaboration</option>
+              <option value="other">Something Else</option>
+            </select>
+            <textarea rows="20" cols="20" placeholder="I am here to help, what's up?"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
   <script src="./scripts/main.js"></script>
-</body>
+  </body>
 
 </html>
