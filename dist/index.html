@@ -7,15 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/site.webmanifest">
+<link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-  <title>Micah M. Tinife | Front-end Developer - Full-Stack Developer</title>
+  <title>Micah M. Tinife | Front-end Developer</title>
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,31 +25,31 @@
 </head>
 
 <body>
-  <header class="navFloat" style="display:none;">
+  <header class="navFloat hide" id="navFloat">
     <ul class="navFloat__socials float-layer-1s">
-      <li><a class="float-layer-s" href="#"><i class="ri-github-fill"></i></a></li>
-      <li><a class="float-layer-s" href="#"><i class="ri-linkedin-box-fill"></i></a></li>
+      <li><a class="float-layer-s" href="https://github.com/mtinife"><i class="ri-github-fill"></i></a></li>
+      <li><a class="float-layer-s" href="https://www.linkedin.com/in/micah-tinife/"><i class="ri-linkedin-box-fill"></i></a></li>
     </ul>
     <nav class="navFloat__navbar float-layer-1">
-      <div class="float-layer-menu">
+      <div class="float-layer-menu" id="navMenu">
         <img src="images/mylogo.png" alt="" width="25px">
         <span style="display: block;">menu</span>
-        <i class="ri-menu-line"></i>
+        <i class="ri-menu-line" id="menuIcon"></i>
       </div>
-      <ul class="float-layer-2">
-        <li><a class="float-layer-b" href="#">Home</a></li>
-        <li><a class="float-layer-b" href="#">Projects</a></li>
-        <li><a class="float-layer-b" href="#">About</a></li>
-        <li><a class="float-layer-b" href="#">Contact</a></li>
+      <ul class="float-layer-2 hide" id="navLinks">
+        <li><a class="float-layer-b" href="#home">Home</a></li>
+        <li><a class="float-layer-b" href="#projects">Projects</a></li>
+        <li><a class="float-layer-b" href="#about">About</a></li>
+        <li><a class="float-layer-b" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <ul class="navFloat__top float-layer-1s">
-      <li><a class="float-layer-s" href="#"><i class="ri-arrow-up-s-line"></i></a></li>
+      <li><a class="float-layer-s" href="#home"><i class="ri-arrow-up-s-line"></i></a></li>
     </ul>
   </header>
   <main>
     <div class="bg-img"><img src="images/mylogo.png" alt=""></div>
-    <section class="home">
+    <section class="home" id="home">
       <div class="home__container">
         <div class="home__circle">
           <div class="home__circle__inner">
@@ -58,9 +58,14 @@
             </div>
           </div>
         </div>
+        <div class="scroll-downs">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="cool-circles">
         <div class="cool-circle-outer">
           <div class="cool-circle-inner">
@@ -75,24 +80,35 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide project__content__item">
-                <img class="project__content__img" src="images/wlc.jpg" alt="">
+                <img class="project__content__img" src="images/cip.jpg" alt="">
                 <div class="project__overlay">
                   <p class="para-size-2">website</p>
-                  <h4 class="heading-size-2">We Love Code Theme</h4>
+                  <h4 class="heading-size-2">Capital Impact Partners</h4>
+                  <div class="project__overlay__links">
+                    <a class="tooltip" href="https://www.capitalimpact.org/"><i class="ri-earth-line"></i><span class="tooltiptext">Live Site</span></a>
+                  </div>
                 </div>
 </li>
               <li class="splide__slide project__content__item">
                 <img class="project__content__img" src="images/wlc.jpg" alt="">
                 <div class="project__overlay">
-                  <p class="para-size-2">website</p>
+                  <p class="para-size-2">website theme</p>
                   <h4 class="heading-size-2">We Love Code Theme</h4>
+                  <div class="project__overlay__links">
+                    <a class="tooltip" href="https://github.com/mtinife/modern-landing-page"><i class="ri-code-line"></i><span class="tooltiptext">Source Code</span></a>
+                    <a class="tooltip" href="https://mtinife.github.io/modern-landing-page/"><i class="ri-earth-line"></i><span class="tooltiptext">Live Site</span></a>
+                  </div>
                 </div>
               </li>
               <li class="splide__slide project__content__item">
-                <img class="project__content__img" src="images/wlc.jpg" alt="">
+                <img class="project__content__img" src="images/brain.jpg" alt="">
                 <div class="project__overlay">
-                  <p class="para-size-2">website</p>
-                  <h4 class="heading-size-2">We Love Code Theme</h4>
+                  <p class="para-size-2">web application</p>
+                  <h4 class="heading-size-2">Smart Brain</h4>
+                  <div class="project__overlay__links">
+                    <a class="tooltip" href="https://github.com/mtinife/vs-themer"><i class="ri-code-line"></i><span class="tooltiptext">Source Code</span></a>
+                    <a class="tooltip" href="https://mtinife.github.io/smart-brain/"><i class="ri-earth-line"></i><span class="tooltiptext">Live Site</span></a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -109,39 +125,48 @@
       </section> 
       <section class="moreProjects">
         <div class="moreProjects__item">
-          <div class="moreProjects__item__status finished-project">Finished</div>
-          <div class="moreProjects__item__content">
-            <div class="curve-corner"></div>
-            <div class="project-details">
-              <h6 class="heading-size-3">project 3</h6>
-              <span class="card-sub">Front-End Project - Jan 2017</span>
-            </div>
-          </div>
-        </div>
-        <div class="moreProjects__item">
-          <div class="moreProjects__item__status finished-project">Finished</div>
-          <div class="moreProjects__item__content">
-            <div class="curve-corner"></div>
-            <div class="project-details">
-              <h6 class="heading-size-3">project 3</h6>
-              <span class="card-sub">Front-End Project - Jan 2017</span>
-            </div>
-          </div>
-        </div>
-        <div class="moreProjects__item">
           <div class="moreProjects__item__status ongoing-project">Ongoing...</div>
           <div class="moreProjects__item__content">
             <div class="curve-corner"></div>
             <div class="project-details">
-              <h6 class="heading-size-3">project 3</h6>
-              <span class="card-sub">Front-End Project - Jan 2017</span>
+              <h6 class="heading-size-3 moreProjectsHeading">Dynamic VS Code Themer</h6>
+              <span class="card-sub">Front-End Project - Mar 2023</span>
+              <div class="project-details__links">
+                <a class="tooltip" href="https://github.com/mtinife/vs-themer"><i class="ri-code-line"></i><span class="tooltiptext">Source Code</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="moreProjects__item">
+          <div class="moreProjects__item__status finished-project">Finished</div>
+          <div class="moreProjects__item__content">
+            <div class="curve-corner"></div>
+            <div class="project-details">
+              <h6 class="heading-size-3 moreProjectsHeading">MJ Web Projects</h6>
+              <span class="card-sub">CMS Project - Jan 2020</span>
+              <div class="project-details__links">
+                <a class="tooltip" href="https://mjweddingsandevents.com/"><i class="ri-earth-line"></i><span class="tooltiptext">Live Site</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="moreProjects__item">
+          <div class="moreProjects__item__status finished-project">Finished</div>
+          <div class="moreProjects__item__content">
+            <div class="curve-corner"></div>
+            <div class="project-details">
+              <h6 class="heading-size-3 moreProjectsHeading">The Missing Part</h6>
+              <span class="card-sub">CMS Project - Oct 2021</span>
+              <div class="project-details__links">
+                <a class="tooltip" href="https://www.themissingpart.org/"><i class="ri-earth-line"></i><span class="tooltiptext">Live Site</span></a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-circle">
         <div class="about-circle-outer">
           <img src="images/pic.jpg" alt="">
@@ -149,14 +174,13 @@
       </div>
       <section class="about__content container">
         <div style="text-transform: uppercase;">
-        <p class="para-size-1">Hi, my name is micah tinife.</p>
-        <p class="para-size-1">I am a front-end Developer.</p>
+        <p class="para-size-1">Hi, my name is micah tinife.<br>I am a front-end Developer.</p>
         </div>
         <h2 class="heading-size-1">A blend of design and code</h2>
-        <p style="padding-right: 8.3em;" class="para-size-1">I love creating software and ditgital experiences that solve problems, showcase ideas or function well.</p>
+        <p style="padding-right: 8.3em;" class="para-size-1">I love creating software and ditgital experiences that solve problems, showcase ideas or well thought out.</p>
       </section>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact-circle-outer"></div>
       <div class="contact__content container">
         <h2 class="heading-size-1 text-center">get in touch</h2>
@@ -169,8 +193,8 @@
           <div class="contact__content__left__bottom">
             <h4 class="heading-size-2">external point of contact</h4>
             <ul>
-              <li class="para-size-2"><p>email</p><a href="#">hello@micahtinife.com</a></li>
-              <li class="para-size-2"><p>github</p><a href="#">micahtinife</a></li>
+              <li class="para-size-2"><p>email</p><a href="mailto:mtinife@gmail.com">mtinife@gmail.com</a></li>
+              <li class="para-size-2"><p>github</p><a href="https://github.com/mtinife">mtinife</a></li>
             </ul>
           </div>        
         </div>
@@ -194,6 +218,9 @@
       </div>
     </section>
   </main>
+  <footer>
+    
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
   <script src="./scripts/main.js"></script>
   </body>

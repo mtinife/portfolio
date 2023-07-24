@@ -7,6 +7,7 @@
   --color-gray: #272727;
   --color-gray2: #373737;
   --color-gray3: #2E2E2E;
+  --color-gray4: #7d7d7d;
   --color-white: #FFFFFF;
 
   /* Sizes */
@@ -20,6 +21,7 @@
 /* CSS RESET */
 html {
   background-color: var(--color-red);
+  scroll-behavior: smooth;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -115,8 +117,24 @@ line-height: clamp(1.031rem, 0.635vw + 0.867rem, 1.375rem);
   background-color: #F0F2A6;
 }
 
+.hide {
+  display: none !important;
+}
+
+.navFloat {
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: end;
+  gap: var(--float-space);
+  z-index: 9999;
+  transition: 1s all ease-in-out;
+}
+
 .float-layer-1s {
-  background-color: var(--color-gray);
+  background-color: #0d0d0d;
   border-radius: var(--float-space);
   padding: var(--float-space);
   display: flex;
@@ -126,21 +144,22 @@ line-height: clamp(1.031rem, 0.635vw + 0.867rem, 1.375rem);
 }
 
 .float-layer-1 {
-  background-color: var(--color-gray);
+  background-color: #0d0d0d;
   border-radius: var(--float-space);
   padding: var(--float-space);
   display: flex;
   gap: var(--float-space);
   flex-direction: column-reverse;
+  height: 72px;
+box-sizing: border-box;
 }
 
 .float-layer-2 {
-  background-color: var(--color-gray3);
+  background-color: #171717;
   border-radius: var(--float-space);
   padding: var(--float-space);
   display: flex;
   gap: var(--float-space);
-  height: 100%;
   flex-direction: column-reverse;
 }
 
@@ -149,13 +168,18 @@ line-height: clamp(1.031rem, 0.635vw + 0.867rem, 1.375rem);
 }
 
 .float-layer-menu {
-  background-color: var(--color-black);
+  background-color: #171717;
   border-radius: var(--float-space);
   display: flex;
   align-items: center;
   padding: 20px;
   gap: inherit;
   cursor: pointer;
+  color: #666565;
+}
+
+.float-layer-menu:hover { 
+  background-color: #242424;
 }
 
 .float-layer-menu span {
@@ -164,20 +188,31 @@ line-height: clamp(1.031rem, 0.635vw + 0.867rem, 1.375rem);
 
 .float-layer-s {
   border-radius: var(--float-space);
-  border: 1px solid var(--color-gray2);
+  border: 1px solid #1c1c1c;
   padding: 20px;
   height: 100%;
   display: flex;
+  color: #484848;
+  font-size: 1.4em;
+}
+
+.float-layer-s:hover {
+  background-color: #242424;
 }
 
 .float-layer-b {
   border-radius: var(--float-space);
-  border: 1px solid var(--color-gray2);
+  border: 1px solid #242424;
   height: 100%;
   display: flex;
   align-items: center;
   padding: 20px;
   justify-content: center;
+  color: #666565;
+}
+
+.float-layer-b:hover {
+  background-color: #242424;
 }
 
 .bg-img img {
@@ -247,8 +282,43 @@ line-height: clamp(1.031rem, 0.635vw + 0.867rem, 1.375rem);
 }
 
 .home__circle__white img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+}
+
+.scroll-downs {
+  position: absolute;
+  right: 0;
+  bottom: 3%;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
 
 .projects {
@@ -324,6 +394,28 @@ background: linear-gradient(180deg, rgba(13,13,13,0) 0%, rgba(13,13,13,0.4471989
 
 .project__overlay p {
   text-transform: capitalize;
+}
+
+.project__overlay__links, .project-details__links {
+  display: flex;
+  gap: 20px;
+}
+
+.project__overlay__links a i {
+  font-size: 2em;
+  color: white;
+}
+
+.project-details__links a i {
+  font-size: 1.5em;
+  color: #171717;
+}
+
+.moreProjectsHeading {
+  white-space: nowrap; 
+  width: 100%; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .splide__progress__bar {
@@ -420,6 +512,7 @@ border-top-right-radius: 12px;
 
 .about__content p {
   font-weight: 100;
+  line-height: 1.3em;
 }
 
 .about-circle {
@@ -531,6 +624,37 @@ display: flex;
     inset 23px 0 20px -23px rgba(0, 0, 0, .8),
     23px 0 20px -23px rgba(0, 0, 0, .8),
     inset 23px 0 40px rgba(0, 0, 0, .1);
+}
+
+footer {
+  margin-top: 5em;
+  color: white;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 @media only screen and (max-width: 600px) {
