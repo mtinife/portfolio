@@ -1,6 +1,4 @@
-import { initializeApp } from 'firebase/app';
 
-const messageRef = firebase.database().ref('messages');
 
 new Splide( '.splide', {
   type    : 'loop',
