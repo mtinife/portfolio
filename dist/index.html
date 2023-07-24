@@ -199,18 +199,19 @@
           </div>        
         </div>
         <div class="contact__content__right">
-          <form>
-            <input type="text" name="fullname" placeholder="Full Name">
-            <input type="text" name="email" placeholder="Email Address">
-            <input type="text" name="company" placeholder="Full Name">
-            <select id="cars" name="cars">
+          <form id="contactForm">
+            <input type="text" id="name" name="fullname" placeholder="Full Name" minlength="4" maxlength="32" size="10">
+            <input type="text" id="email" name="email" placeholder="Email Address"  size="30">
+            <input type="text" id="company" name="company" placeholder="Company" minlength="4" maxlength="32" size="32">
+            <input type="tel" id="phone" name="phone"  required placeholder="Phone Number">
+            <select id="subject" name="Subject">
               <option value="">--Select--</option>
               <option value="Hire">Hire</option>
               <option value="freelance">Freelance</option>
               <option value="colab">Project Colaboration</option>
               <option value="other">Something Else</option>
             </select>
-            <textarea rows="20" cols="20" placeholder="I am here to help, what's up?"></textarea>
+            <textarea id="message" rows="20" cols="20" placeholder="I am here to help, what's up?"></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
@@ -222,7 +223,7 @@
     
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
-  <script src="./scripts/main.js"></script>
+   <script type="module" src="./scripts/main.js"></script>
   </body>
 
 </html>
