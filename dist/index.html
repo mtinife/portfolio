@@ -16,6 +16,7 @@
 <meta name="theme-color" content="#ffffff">
 
   <title>Micah M. Tinife | Front-end Developer</title>
+  <script src="./scripts/server.js"></script>
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -199,7 +200,7 @@
           </div>        
         </div>
         <div class="contact__content__right">
-          <form id="contactForm">
+          <form action="/send_email" method="post" id="contactForm">
             <input type="text" id="name" name="fullname" placeholder="Full Name" minlength="4" maxlength="32" size="10">
             <input type="text" id="email" name="email" placeholder="Email Address"  size="30">
             <input type="text" id="company" name="company" placeholder="Company" minlength="4" maxlength="32" size="32">
