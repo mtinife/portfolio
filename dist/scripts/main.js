@@ -1,11 +1,3 @@
-
-
-new Splide( '.splide', {
-  type    : 'loop',
-  autoplay: 'play',
-  perPage : 1,
-}).mount();
-
 function showFloatNav() {
   const navMenu = document.getElementById('navMenu');
   let navLinks = document.getElementById('navLinks');
@@ -31,6 +23,39 @@ function showNavbarOnScroll() {
   }, 200);
 }
 
+ const myTags = [
+    'JavaScript', 'CSS', 'HTML',
+    'C', 'C++', 'React',
+    'Python', 'Java', 'git',
+    'django', 'Node.js', 'OpenCV',
+    'GCP', 'MySQL', 'jQuery',
+];
+
+var tagCloud = TagCloud('.content', myTags,{
+
+  // radius in px
+  radius: 200,
+
+  // animation speed
+  // slow, normal, fast
+  maxSpeed: 'fast',
+  initSpeed: 'fast',
+
+  // 0 = top
+  // 90 = left
+  // 135 = right-bottom
+  direction: 135,
+  
+  // interact with cursor move on mouse out
+  keep: true
+  
+});
+
+//To change the color of text randomly
+var colors = ['#D9843B', '#0D0D0D', '#FFFFFF'];
+var random_color = colors[Math.floor(Math.random() * colors.length)];
+document.querySelector('.content').style.color = random_color;
+
 function footerElm() {
   let footer = document.querySelector('footer');
   let paraElm = document.createElement('p');
@@ -45,6 +70,10 @@ const scrollFunc = function () {
   showNavbarOnScroll();
 }
 
-navMenu.addEventListener('click', showFloatNav);
-window.addEventListener('scroll', scrollFunc);
-footerElm();
+function init() {
+  navMenu.addEventListener('click', showFloatNav);
+  window.addEventListener('scroll', scrollFunc);
+  footerElm();
+}
+
+init();
