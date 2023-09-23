@@ -4,5 +4,41 @@
   --c-d-red: #3E0709;
   --c-gold: #D9843B;
 
-  
+  /* Font Family */
+  --ff-babas: 'Bebas Neue', sans-serif;
+  --ff-vibes: 'Great Vibes', cursive;
+  --ff-incon: 'Inconsolata', monospace;
+  --ff-roboto: 'Roboto', sans-serif;
+
+  /* Font Size */
+  /* Heading */
+  /* Size 400px - 84px */
+  --fz-heading-1: clamp(5.25rem, 10vw + 1rem, 25rem);
+  /* Size 220px - 54px */
+  --fz-heading-2: clamp(3.375rem, 10vw + 1rem, 13.75rem);
+  /* Size 180px - 46px */
+  --fz-heading-3: clamp(2.875rem, 10vw + 1rem, 11.25rem);
+  /* Size 72px - 30px */
+  --fz-heading-4: clamp(1.875rem, 10vw + 1rem, 4.5rem);
+  /* Body */
+  /* Size 60px - 24px */ 
+  --fz-body-1: clamp(1.5rem, 10vw + 1rem, 3.75rem);
+  /* Size 48px - 18px */ 
+  --fz-body-2: clamp(1.125rem, 10vw + 1rem, 3rem);
+  /* Size 36px - 16px */ 
+  --fz-body-3: clamp(1rem, 10vw + 1rem, 2.25rem);
+  /* Size 30px - 16px */ 
+  --fz-body-4: clamp(1rem, 10vw + 1rem, 1.875rem);
+  /* Size 28px - 14px */ 
+  --fz-body-5: clamp(0.875rem, 10vw + 1rem, 1.75rem);
+
+  /* Base */
+  /* Border Radius */
+  --br-1: 10em;
+  --br-2: 5em;
+  --br-3: 3em;
+  --br-4: 1em;
+  --br-5: 0.875em;
+  /* Border */
+  --b-1: 2px solid var(var(--c-gold);
 }
