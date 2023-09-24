@@ -1,4 +1,4 @@
-import Vue from "vue";
+// import Vue from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
@@ -6,7 +6,7 @@ import ProjectsView from "../views/ProjectsView.vue";
 import ServicesView from "../views/ServicesView.vue";
 import ContactView from "../views/ContactView.vue";
 
-Vue.use(createRouter);
+// Vue.use(createRouter);
 
 const routes = [
   {
