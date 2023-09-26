@@ -36,13 +36,11 @@ nav {
   font-family: var(--ff-roboto);
   font-size: 1rem;
   color: var(--c-gold);
-  padding-top: 2rem;
 }
 .logo img {
   position: absolute;
-  top: -40%;
-  left: -3%;
-  width: 8%;
+  top: -47%;
+  width: 80px;
 }
 .navbar__links {
   width: 620px;

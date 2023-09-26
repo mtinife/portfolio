@@ -58,6 +58,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 figure,
 blockquote,
@@ -86,6 +88,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--c-d-red);
+  color: var(--c-gold);
   padding: 1.5em;
 }
 
@@ -97,6 +100,7 @@ a:not([class]) {
 /* Default link style */
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 /* Make images easier to work with */
@@ -112,6 +116,14 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+hr {
+  color: var(--c-gold);
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -136,5 +148,138 @@ select {
   height: 100%;
   background-color: var(--c-red);
   border-radius: var(--br-3);
-  padding: 0 2rem;
+  padding: 2rem;
+}
+
+/* Headings */
+.heading-1 {
+  font-family: var(--ff-babas);
+  font-size: var(--fz-heading-1);
+  line-height: 90%;
+}
+
+.heading-2 {
+  font-family: var(--ff-babas);
+  font-size: var(--fz-heading-2);
+  line-height: 100%;
+}
+
+.heading-3 {
+  font-family: var(--ff-babas);
+  font-size: var(--fz-heading-3);
+  line-height: 80%;
+}
+
+.heading-babas-4 {
+  font-family: var(--ff-babas);
+  font-size: var(--fz-body-4);
+  line-height: 50%;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-4);
+  line-height: 50%;
+  text-transform: uppercase;
+}
+
+.heading-robo-4 {
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-heading-4);
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.heading-5 {
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-1);
+  font-weight: 300;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.body-incon-1 {
+  font-family: var(--ff-incon);
+  font-size: var(--fz-body-1);
+  line-height: 100%;
+}
+
+.incon-default {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: var(--ff-incon);
+}
+
+.body-incon-2 {
+  font-family: var(--ff-incon);
+  font-size: var(--fz-body-2);
+  line-height: 100%;
+}
+
+.body-robo-1 {
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-4);
+  line-height: 100%;
+}
+
+.body-robo-2 {
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-5);
+  line-height: 100%;
+}
+
+.gold-bg {
+  background-color: var(--c-gold);
+  color: var(--c-d-red);
+  padding: 5rem;
+  border-radius: var(--br-3);
+}
+
+.dark-red-bg {
+  background-color: var(--c-d-red);
+  padding: 5rem;
+  border-radius: var(--br-3);
+}
+
+.button-1 {
+  border: var(--b-1);
+  padding: 10px 25px;
+  font-family: var(--ff-incon);
+  color: var(--c-gold);
+}
+
+.button-2 {
+  padding: 10px 5px 10px 25px;
+  background-color: var(--c-d-red);
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-4);
+  border-radius: 5rem;
+}
+.button-2 span {
+  padding-right: 20px; 
+  color: var(--c-gold);
+}
+.button-2 i {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--c-gold);
+  color: var(--c-d-red);
+}
+.button-3 {
+  padding: 10px 5px 10px 25px;
+  background-color: var(--c-gold);
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-4);
+  border-radius: 5rem;
+}
+.button-3 span {
+  padding-right: 20px; 
+  color: var(--c-d-red);
+}
+.button-3 i {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--c-d-red);
+  color: var(--c-gold);
 }
