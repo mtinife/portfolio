@@ -23,7 +23,7 @@
         <img alt="" src="../../public/images/emoji-me-home.png" />
       </div>
     </section>
-    <article class="home__story">
+    <article class="home__story spacing-default">
       <span class="heading-4">my story</span>
       <div class="home__story__content">
         <p class="body-incon-2">
@@ -38,30 +38,34 @@
         </p>
       </div>
     </article>
-    <section class="home__services">
+    <section class="home__services spacing-default">
       <span class="heading-4">services & solutions</span>
       <ul role="list" class="home__services__content">
+        <hr />
         <li>
-          <span>01</span>
+          <span class="service__count">01</span>
           <h2 class="heading-3">full scale development</h2>
           <router-link to="/services" class="button-1">Read More</router-link>
         </li>
+        <hr />
         <li>
-          <span>02</span>
+          <span class="service__count">02</span>
           <h2 class="heading-3">project design and markups</h2>
           <router-link to="/services" class="button-1">Read More</router-link>
         </li>
+        <hr />
         <li>
-          <span>03</span>
+          <span class="service__count">03</span>
           <h2 class="heading-3">project consultation</h2>
-          <router-link to="/services" class="button1">Read More</router-link>
+          <router-link to="/services" class="button-1">Read More</router-link>
         </li>
+        <hr />
       </ul>
     </section>
   </section>
-  <section class="home__process">
+  <section class="home__process spacing-default">
     <div class="home__process__steps">
-      <div>
+      <div class="home__process__steps-1">
         <div>
           <h3 class="heading-5">my process</h3>
           <p class="body-robo-2">
@@ -71,7 +75,7 @@
           </p>
         </div>
         <div>
-          <span>01</span>
+          <span class="process__count">01</span>
           <hr />
           <h4 class="heading-babas-4">intro call</h4>
           <p class="body-robo-2">
@@ -80,7 +84,7 @@
           </p>
         </div>
         <div>
-          <span>02</span>
+          <span class="process__count">02</span>
           <hr />
           <h4 class="heading-babas-4">discovery</h4>
           <p class="body-robo-2">
@@ -88,7 +92,7 @@
           </p>
         </div>
         <div>
-          <span>03</span>
+          <span class="process__count">03</span>
           <hr />
           <h4 class="heading-babas-4">wireframe</h4>
           <p class="body-robo-2">
@@ -96,9 +100,9 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="home__process__steps-2">
         <div>
-          <span>04</span>
+          <span class="process__count">04</span>
           <hr />
           <h4 class="heading-babas-4">design</h4>
           <p class="body-robo-2">
@@ -107,7 +111,7 @@
           </p>
         </div>
         <div>
-          <span>05</span>
+          <span class="process__count">05</span>
           <hr />
           <h4 class="heading-babas-4">development</h4>
           <p class="body-robo-2">
@@ -116,7 +120,7 @@
           </p>
         </div>
         <div>
-          <span>06</span>
+          <span class="process__count">06</span>
           <hr />
           <h4 class="heading-babas-4">content upload</h4>
           <p class="body-robo-2">
@@ -125,7 +129,7 @@
           </p>
         </div>
         <div>
-          <span>07</span>
+          <span class="process__count">07</span>
           <hr />
           <h4 class="heading-babas-4">launch & support</h4>
           <p class="body-robo-2">
@@ -137,8 +141,8 @@
       </div>
     </div>
   </section>
-  <section class="home__faq">
-    <h2 class="heading-1">/*FAQ*/</h2>
+  <section class="home__faq spacing-default">
+    <h2 class="heading-0">/*FAQ*/</h2>
     <ul role="list" class="body-robo-2">
       <li>
         <span>/01</span>
@@ -170,7 +174,7 @@
       </li>
     </ul>
   </section>
-  <section class="cta gold-bg">
+  <section class="cta gold-bg spacing-default">
     <h6 class="heading-robo-4">
       Let's get started, your dream projects can't wait.
     </h6>
@@ -215,7 +219,7 @@
         </li>
       </ul>
     </div>
-    <div class="footer__social">
+    <div class="footer__social spacing-default-1">
       <div class="body-incon-1">
         <i class="ri-mail-line"></i>
         <span>Direct Connect</span>
@@ -238,7 +242,7 @@
         </p>
       </div>
     </div>
-    <span>
+    <span class="footer__copyright">
       &copy;2023 - Micah M. Tinife - Made with
       <i class="ri-heart-2-fill"></i> & Vue Js
     </span>
@@ -247,12 +251,8 @@
 <style scoped>
 @import "../../public/main.css";
 .home__hero {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  color: var(--c-gold);
   margin: 5% auto;
 }
-
 .home__hero__me {
   display: grid;
   grid-template-columns: 1fr;
@@ -284,8 +284,32 @@
   grid-area: 1 / 1 / 2 / 2;
   font-family: var(--ff-incon);
 }
-.footer__contact form {
-  display: grid;
+.home__process {
+  background-color: var(--c-d-red);
+  padding: 5rem;
+  border-radius: var(--br-3);
+}
+.home__services__content li {
+  padding: 5rem 0 5rem 5rem;
+}
+.home__services__content li h2 {
+  padding: 2rem;
+}
+.home__services__content li a {
+  display: flex;
+  width: 12%;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+}
+.service__count {
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-4);
+  font-weight: bold;
+}
+.process__count {
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-2);
 }
 .footer__contact form input,
 .footer__contact form select {
@@ -296,11 +320,63 @@
   font-size: var(--fz-body-3);
   font-family: var(--ff-incon);
   color: var(--c-gold);
+  display: flex;
+  width: 100%;
+}
+.cta h6 {
+  font-weight: bold;
 }
 .footer__contact ul li a {
   padding: 10px 0;
   color: var(--c-gold);
   font-family: var(--ff-roboto);
   text-transform: uppercase;
+}
+.footer__copyright {
+  font-family: var(--ff-roboto);
+}
+@media screen and (min-width: 1000px) {
+  .home__hero {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+  }
+  .home__story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home__process__steps-1 {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: var(--gap);
+    margin-bottom: 10rem;
+  }
+  .home__process__steps-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+  }
+  .home__services {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+  }
+  .cta {
+    display: grid;
+    grid-template-columns: 2.4fr 229px;
+    align-items: center;
+  }
+  .cta .button-2 {
+    height: 50%;
+  }
+  .footer__contact {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 10rem;
+  }
+  .footer__social,
+  .footer__social div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
 }
 </style>

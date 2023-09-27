@@ -14,6 +14,8 @@
   /* Font Size */
   /* Heading */
   /* Size 400px - 84px */
+  --fz-heading-0: clamp(5.25rem, 15vw + 1rem, 25rem);
+  /* Size 400px - 84px */
   --fz-heading-1: clamp(5.25rem, 10vw + 1rem, 25rem);
   /* Size 220px - 54px */
   --fz-heading-2: clamp(3.375rem, 10vw + 1rem, 13.75rem);
@@ -42,6 +44,9 @@
   --br-5: 0.875rem;
   /* Border */
   --b-1: 2px solid var(--c-gold);
+
+  /* Grid Gap */
+  --gap: 40px;
 }
 
 /* Resets */
@@ -152,6 +157,12 @@ hr {
 }
 
 /* Headings */
+.heading-0 {
+  font-family: var(--ff-babas);
+  font-size: var(--fz-heading-0);
+  line-height: 90%;
+}
+
 .heading-1 {
   font-family: var(--ff-babas);
   font-size: var(--fz-heading-1);
@@ -172,8 +183,8 @@ hr {
 
 .heading-babas-4 {
   font-family: var(--ff-babas);
-  font-size: var(--fz-body-4);
-  line-height: 50%;
+  font-size: var(--fz-heading-4);
+  line-height: 100%;
   text-transform: uppercase;
 }
 
@@ -282,4 +293,10 @@ hr {
   border-radius: 50%;
   background-color: var(--c-d-red);
   color: var(--c-gold);
+}
+.spacing-default {
+  margin: 10% 0;
+}
+.spacing-default-1 {
+  margin: 5% 0;
 }
