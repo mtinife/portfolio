@@ -14,6 +14,8 @@
   /* Font Size */
   /* Heading */
   /* Size 400px - 84px */
+  --fz-heading-0: clamp(5.25rem, 15vw + 1rem, 25rem);
+  /* Size 400px - 84px */
   --fz-heading-1: clamp(5.25rem, 10vw + 1rem, 25rem);
   /* Size 220px - 54px */
   --fz-heading-2: clamp(3.375rem, 10vw + 1rem, 13.75rem);
@@ -42,6 +44,9 @@
   --br-5: 0.875rem;
   /* Border */
   --b-1: 2px solid var(--c-gold);
+
+  /* Grid Gap */
+  --gap: 40px;
 }
 
 /* Resets */
@@ -123,7 +128,7 @@ button {
 }
 
 hr {
-  color: var(--c-gold);
+  border-color: var(--c-gold);
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -152,35 +157,46 @@ hr {
 }
 
 /* Headings */
+.heading-0 {
+  font-family: var(--ff-babas);
+  font-size: var(--fz-heading-0);
+  line-height: 90%;
+  letter-spacing: 1rem;
+}
+
 .heading-1 {
   font-family: var(--ff-babas);
   font-size: var(--fz-heading-1);
   line-height: 90%;
+  letter-spacing: 0.5rem;
 }
 
 .heading-2 {
   font-family: var(--ff-babas);
   font-size: var(--fz-heading-2);
   line-height: 100%;
+  letter-spacing: 1rem;
 }
 
 .heading-3 {
   font-family: var(--ff-babas);
   font-size: var(--fz-heading-3);
-  line-height: 80%;
+  line-height: 100%;
+  letter-spacing: 0.5rem;
 }
 
 .heading-babas-4 {
   font-family: var(--ff-babas);
-  font-size: var(--fz-body-4);
-  line-height: 50%;
+  font-size: var(--fz-heading-4);
+  line-height: 100%;
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 .heading-4 {
   font-family: var(--ff-roboto);
   font-size: var(--fz-body-4);
-  line-height: 50%;
+  line-height: 100%;
   text-transform: uppercase;
 }
 
@@ -199,14 +215,25 @@ hr {
   text-transform: uppercase;
 }
 
+.heading-projects {
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-2);
+  line-height: 100%;
+  font-weight: 400;
+}
+
 .body-incon-1 {
   font-family: var(--ff-incon);
   font-size: var(--fz-body-1);
   line-height: 100%;
 }
 
+.incon-font {
+  font-family: var(--ff-incon);
+}
+
 .incon-default {
-  font-size: 2rem;
+  font-size: 1.5vw;
   text-transform: uppercase;
   font-family: var(--ff-incon);
 }
@@ -214,6 +241,11 @@ hr {
 .body-incon-2 {
   font-family: var(--ff-incon);
   font-size: var(--fz-body-2);
+  line-height: 100%;
+}
+.body-incon-5 {
+  font-family: var(--ff-incon);
+  font-size: var(--fz-body-5);
   line-height: 100%;
 }
 
@@ -247,6 +279,7 @@ hr {
   padding: 10px 25px;
   font-family: var(--ff-incon);
   color: var(--c-gold);
+  cursor: pointer;
 }
 
 .button-2 {
@@ -255,6 +288,7 @@ hr {
   font-family: var(--ff-roboto);
   font-size: var(--fz-body-4);
   border-radius: 5rem;
+  cursor: pointer;
 }
 .button-2 span {
   padding-right: 20px; 
@@ -272,6 +306,8 @@ hr {
   font-family: var(--ff-roboto);
   font-size: var(--fz-body-4);
   border-radius: 5rem;
+  cursor: pointer;
+  float: right;
 }
 .button-3 span {
   padding-right: 20px; 
@@ -280,6 +316,28 @@ hr {
 .button-3 i {
   padding: 12px;
   border-radius: 50%;
-  background-color: var(--c-d-red);
+  background-color: var(--c-red);
   color: var(--c-gold);
+}
+.spacing-default {
+  margin: 10% 0;
+}
+.spacing-default-1 {
+  margin: 5% 0;
+}
+.spacing-default-2 {
+  margin: 8% 0 15% 0;
+}
+.spacing-default-3 {
+  margin-top: 5%;
+}
+.spacing-default-4 {
+  margin-top: 10%;
+}
+.center-text {
+  text-align: center;
+}
+.thin-para {
+  font-weight: 100;
+  line-height: 140%;
 }

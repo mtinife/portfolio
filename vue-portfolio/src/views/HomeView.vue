@@ -23,7 +23,7 @@
         <img alt="" src="../../public/images/emoji-me-home.png" />
       </div>
     </section>
-    <article class="home__story">
+    <article class="home__story spacing-default">
       <span class="heading-4">my story</span>
       <div class="home__story__content">
         <p class="body-incon-2">
@@ -31,114 +31,130 @@
           is client centered, making sure my clients are taking care of in a
           wide range of areas.
         </p>
-        <p class="body-robo-1">
+        <p class="body-robo-1 spacing-default-3 thin-para">
           I found that clients needed more than just good software and
           applications; they need someone that understands their projects and
-          can grow with their projects; moving it forward.
+          can grow with their project.
         </p>
       </div>
     </article>
-    <section class="home__services">
-      <span class="heading-4">services & solutions</span>
+    <section class="home__services spacing-default">
+      <span class="heading-4">
+        services
+        <br />
+        & solutions
+      </span>
       <ul role="list" class="home__services__content">
+        <hr />
         <li>
-          <span>01</span>
+          <span class="service__count">01</span>
           <h2 class="heading-3">full scale development</h2>
           <router-link to="/services" class="button-1">Read More</router-link>
         </li>
+        <hr />
         <li>
-          <span>02</span>
+          <span class="service__count">02</span>
           <h2 class="heading-3">project design and markups</h2>
           <router-link to="/services" class="button-1">Read More</router-link>
         </li>
+        <hr />
         <li>
-          <span>03</span>
+          <span class="service__count">03</span>
           <h2 class="heading-3">project consultation</h2>
-          <router-link to="/services" class="button1">Read More</router-link>
+          <router-link to="/services" class="button-1">Read More</router-link>
         </li>
+        <hr />
       </ul>
     </section>
   </section>
-  <section class="home__process">
+  <section class="home__process spacing-default">
     <div class="home__process__steps">
-      <div>
+      <div class="home__process__steps-1">
         <div>
-          <h3 class="heading-5">my process</h3>
-          <p class="body-robo-2">
+          <h3 class="heading-5">
+            my
+            <br />
+            process
+          </h3>
+          <p class="body-robo-2 spacing-default-3 thin-para">
             The goal is to getting an idea of what you're looking for; each
             project is different and offers different challenges and solutions.
             I have a 7 step process I take client through
           </p>
         </div>
         <div>
-          <span>01</span>
+          <span class="process__count">01</span>
           <hr />
-          <h4 class="heading-babas-4">intro call</h4>
-          <p class="body-robo-2">
+          <h4 class="heading-babas-4 spacing-default-2">intro call</h4>
+          <p class="body-robo-2 thin-para">
             The first step in the process. A friendly call on what your needs
             and visions are
           </p>
         </div>
         <div>
-          <span>02</span>
+          <span class="process__count">02</span>
           <hr />
-          <h4 class="heading-babas-4">discovery</h4>
-          <p class="body-robo-2">
+          <h4 class="heading-babas-4 spacing-default-2">discovery</h4>
+          <p class="body-robo-2 thin-para">
             We look for possible solutions to the problems your facing
           </p>
         </div>
         <div>
-          <span>03</span>
+          <span class="process__count">03</span>
           <hr />
-          <h4 class="heading-babas-4">wireframe</h4>
-          <p class="body-robo-2">
+          <h4 class="heading-babas-4 spacing-default-2">wireframe</h4>
+          <p class="body-robo-2 thin-para">
             Mocking up the solutions and how they will be implemented
           </p>
         </div>
       </div>
-      <div>
+      <div class="home__process__steps-2">
         <div>
-          <span>04</span>
+          <span class="process__count">04</span>
           <hr />
-          <h4 class="heading-babas-4">design</h4>
-          <p class="body-robo-2">
+          <h4 class="heading-babas-4 spacing-default-2">design</h4>
+          <p class="body-robo-2 thin-para">
             From the mock ups a final design draft is created and prep for
             development
           </p>
         </div>
         <div>
-          <span>05</span>
+          <span class="process__count">05</span>
           <hr />
-          <h4 class="heading-babas-4">development</h4>
-          <p class="body-robo-2">
+          <h4 class="heading-babas-4 spacing-default-2">development</h4>
+          <p class="body-robo-2 thin-para">
             Setting up all the technical components and software needed for the
             project
           </p>
         </div>
         <div>
-          <span>06</span>
+          <span class="process__count">06</span>
           <hr />
-          <h4 class="heading-babas-4">content upload</h4>
-          <p class="body-robo-2">
+          <h4 class="heading-babas-4 spacing-default-2">content upload</h4>
+          <p class="body-robo-2 thin-para">
             Ensuring all content and messaging is correct. Blogs, Press Policies
             and other content content are up to date
           </p>
         </div>
         <div>
-          <span>07</span>
+          <span class="process__count">07</span>
           <hr />
-          <h4 class="heading-babas-4">launch & support</h4>
-          <p class="body-robo-2">
+          <h4 class="heading-babas-4 spacing-default-2">launch & support</h4>
+          <p class="body-robo-2 thin-para">
             Launch the project with guides and documentation (text and visual)
             of the project. Setting up a maintenance process and a schedule for
             when it will be completed
           </p>
         </div>
       </div>
+      <p class="body-robo-2 spacing-default-3">
+        *Every project is special, my process can adapt to your projects
+        regardless of where they are in the process.
+      </p>
     </div>
   </section>
-  <section class="home__faq">
-    <h2 class="heading-1">/*FAQ*/</h2>
+  <section class="home__faq spacing-default">
+    <h2 class="heading-0 center-text">/*FAQ*/</h2>
     <ul role="list" class="body-robo-2">
       <li>
         <span>/01</span>
@@ -170,89 +186,12 @@
       </li>
     </ul>
   </section>
-  <section class="cta gold-bg">
-    <h6 class="heading-robo-4">
-      Let's get started, your dream projects can't wait.
-    </h6>
-    <button class="button-2">
-      <span>Let's Talk</span>
-      <i class="ri-arrow-right-up-line"></i>
-    </button>
-  </section>
-  <footer class="footer dark-red-bg">
-    <h2 class="heading-2">get in touch</h2>
-    <div class="footer__contact">
-      <form>
-        <input type="email" placeholder="Your E-mail" />
-        <select id="cars" name="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="fiat">Fiat</option>
-          <option value="audi">Audi</option>
-        </select>
-        <button type="submit" class="button-3">
-          <span>Let's Talk</span>
-          <i class="ri-arrow-right-line"></i>
-        </button>
-      </form>
-      <ul role="list">
-        <li>
-          <hr />
-          <router-link to="/about">About</router-link>
-        </li>
-        <li>
-          <hr />
-          <router-link to="/projects">projects</router-link>
-        </li>
-        <li>
-          <hr />
-          <router-link to="/services">services</router-link>
-        </li>
-        <li>
-          <hr />
-          <router-link to="/contact">Contact</router-link>
-          <hr />
-        </li>
-      </ul>
-    </div>
-    <div class="footer__social">
-      <div class="body-incon-1">
-        <i class="ri-mail-line"></i>
-        <span>Direct Connect</span>
-      </div>
-      <div>
-        <p class="incon-default">
-          <span class="body-incon-2">{</span>
-          linkedin
-          <span class="body-incon-2">}</span>
-        </p>
-        <p class="incon-default">
-          <span class="body-incon-2">{</span>
-          facebook
-          <span class="body-incon-2">}</span>
-        </p>
-        <p class="incon-default">
-          <span class="body-incon-2">{</span>
-          twitter
-          <span class="body-incon-2">}</span>
-        </p>
-      </div>
-    </div>
-    <span>
-      &copy;2023 - Micah M. Tinife - Made with
-      <i class="ri-heart-2-fill"></i> & Vue Js
-    </span>
-  </footer>
 </template>
 <style scoped>
 @import "../../public/main.css";
 .home__hero {
-  display: grid;
-  grid-template-columns: 2.5fr 1fr;
-  color: var(--c-gold);
   margin: 5% auto;
 }
-
 .home__hero__me {
   display: grid;
   grid-template-columns: 1fr;
@@ -284,23 +223,74 @@
   grid-area: 1 / 1 / 2 / 2;
   font-family: var(--ff-incon);
 }
-.footer__contact form {
-  display: grid;
+.home__process {
+  background-color: var(--c-d-red);
+  padding: 5rem;
+  border-radius: var(--br-3);
 }
-.footer__contact form input,
-.footer__contact form select {
-  padding: 20px 0;
-  background: none;
-  border: none;
+.home__services__content li {
+  padding: 5rem 0 5rem 5rem;
+}
+.home__services__content li h2 {
+  padding: 2rem;
+}
+.home__services__content li a {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 0;
+}
+.home__services__content li a:hover {
+  color: var(--c-d-red);
+  background-color: var(--c-gold);
+}
+.home__faq ul {
+  width: 80%;
+  margin: 5% 0 0 auto;
+}
+.home__faq ul li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
   border-bottom: var(--b-1);
-  font-size: var(--fz-body-3);
-  font-family: var(--ff-incon);
-  color: var(--c-gold);
+  margin-bottom: 2rem;
 }
-.footer__contact ul li a {
-  padding: 10px 0;
-  color: var(--c-gold);
+.home__faq ul li span i {
+  font-size: var(--fz-body-2);
+}
+.service__count {
   font-family: var(--ff-roboto);
-  text-transform: uppercase;
+  font-size: var(--fz-body-4);
+  font-weight: bold;
+}
+.process__count {
+  font-family: var(--ff-roboto);
+  font-size: var(--fz-body-2);
+}
+@media screen and (min-width: 1000px) {
+  .home__hero {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+  }
+  .home__story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home__process__steps-1 {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: var(--gap);
+    margin-bottom: 10rem;
+  }
+  .home__process__steps-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap);
+  }
+  .home__services {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+  }
 }
 </style>

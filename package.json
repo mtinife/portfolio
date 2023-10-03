@@ -23,7 +23,8 @@
     "firebase": "^8.6.8",
     "gh-pages": "^2.0.1",
     "path": "^0.12.7",
-    "resend": "^0.17.1"
+    "resend": "^0.17.1",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "typescript": "^5.1.6"
