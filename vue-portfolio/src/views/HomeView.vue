@@ -1,15 +1,15 @@
 <template>
-  <section class="home">
-    <section class="home__hero">
-      <h1 class="heading-1">
-        I Design &
+  <section class="">
+    <section class="">
+      <h1 class="text-base font-bebas text-ra-gold">
+        I <span class="font-vibes">Design</span> &
         <br />
         { Develop } Software Applications.
       </h1>
       <div class="home__hero__me">
         <div>
-          <span>&#10078;</span>
-          <p>
+          <span class="text-ra-dark">&#10078;</span>
+          <p class="font-incon text-sm">
             The graveyard is the richest place on earth, because it is here that
             you will find all the hopes and dreams that were never
             fulfilled...the inventions that were never shared, the cures that
@@ -187,110 +187,4 @@
     </ul>
   </section>
 </template>
-<style scoped>
-@import "../../public/main.css";
-.home__hero {
-  margin: 5% auto;
-}
-.home__hero__me {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-.home__hero__me div {
-  grid-area: 1 / 1 / 2 / 2;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  position: relative;
-  left: -60%;
-  top: 10%;
-  padding-right: 40px;
-}
-.home__hero__me img {
-  grid-area: 1 / 1 / 2 / 2;
-  display: flex;
-  align-self: end;
-}
-.home__hero__me div span {
-  grid-area: 1 / 1 / 2 / 2;
-  font-size: var(--fz-heading-1);
-  line-height: 100%;
-  color: var(--c-d-red);
-  margin-top: -40px;
-}
-.home__hero__me p {
-  grid-area: 1 / 1 / 2 / 2;
-  font-family: var(--ff-incon);
-}
-.home__process {
-  background-color: var(--c-d-red);
-  padding: 5rem;
-  border-radius: var(--br-3);
-}
-.home__services__content li {
-  padding: 5rem 0 5rem 5rem;
-}
-.home__services__content li h2 {
-  padding: 2rem;
-}
-.home__services__content li a {
-  display: flex;
-  width: 20%;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: 0;
-}
-.home__services__content li a:hover {
-  color: var(--c-d-red);
-  background-color: var(--c-gold);
-}
-.home__faq ul {
-  width: 80%;
-  margin: 5% 0 0 auto;
-}
-.home__faq ul li {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  border-bottom: var(--b-1);
-  margin-bottom: 2rem;
-}
-.home__faq ul li span i {
-  font-size: var(--fz-body-2);
-}
-.service__count {
-  font-family: var(--ff-roboto);
-  font-size: var(--fz-body-4);
-  font-weight: bold;
-}
-.process__count {
-  font-family: var(--ff-roboto);
-  font-size: var(--fz-body-2);
-}
-@media screen and (min-width: 1000px) {
-  .home__hero {
-    display: grid;
-    grid-template-columns: 2.5fr 1fr;
-  }
-  .home__story {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .home__process__steps-1 {
-    display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr);
-    gap: var(--gap);
-    margin-bottom: 10rem;
-  }
-  .home__process__steps-2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--gap);
-  }
-  .home__services {
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
-  }
-}
-</style>
+<style src="../assets/tailwind.css"></style>

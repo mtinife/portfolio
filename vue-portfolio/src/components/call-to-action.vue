@@ -11,19 +11,3 @@
     </button>
   </section>
 </template>
-<style scoped>
-@import "../../public/main.css";
-.cta h6 {
-  font-weight: bold;
-}
-@media screen and (min-width: 1000px) {
-  .cta {
-    display: grid;
-    grid-template-columns: 2.4fr 229px;
-    align-items: center;
-  }
-  .cta .button-2 {
-    height: 50%;
-  }
-}
-</style>

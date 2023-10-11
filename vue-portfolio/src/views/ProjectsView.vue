@@ -3,9 +3,12 @@
     <section class="page-hero spacing-default-4 center-text">
       <h1 class="heading-1">
         the project
-        <span>[7]</span>
+        <span class="body-incon-1">[7]</span>
       </h1>
-      <p class="body-incon-5">
+      <p
+        class="body-incon-5 spacing-default-1"
+        :style="{ width: 40 + '%', textAlign: 'center', margin: '5% auto' }"
+      >
         Showcase of the work I've delieved to clients and organization I have
         been a part of.
       </p>
@@ -16,27 +19,27 @@
         <div class="projects__featured projects__item">
           <div class="projects__item__content">
             <span class="body-incon-5">December 25, 2023</span>
-            <h3 class="heading-projects">
+            <h3 class="heading-projects" :style="{ padding: '2rem 0' }">
               Please put the title of the project here
             </h3>
+            <div class="projects__item__tags"></div>
           </div>
-          <div class="projects__item__tags"></div>
           <div class="projects__item__btn">
-            <a href="#" class="button-1">Live Preview</a>
-            <a href="#" class="button-1">Source Code</a>
+            <a href="#" class="button-1">Preview</a>
+            <a href="#" class="button-1">Code</a>
           </div>
         </div>
         <div class="projects__item">
           <div class="projects__item__content">
             <span class="body-incon-5">December 25, 2023</span>
-            <h3 class="heading-projects">
+            <h3 class="heading-projects" :style="{ padding: '2rem 0' }">
               Please put the title of the project here
             </h3>
+            <div class="projects__item__tags"></div>
           </div>
-          <div class="projects__item__tags"></div>
           <div class="projects__item__btn">
-            <a href="#" class="button-1">Live Preview</a>
-            <a href="#" class="button-1">Source Code</a>
+            <a href="#" class="button-1">Preview</a>
+            <a href="#" class="button-1">Code</a>
           </div>
         </div>
       </div>
@@ -44,28 +47,28 @@
         <div class="projects__item">
           <div class="projects__item__content">
             <span class="body-incon-5">December 25, 2023</span>
-            <h3 class="heading-projects">
+            <h3 class="heading-projects" :style="{ padding: '2rem 0' }">
               Please put the title of the project here
             </h3>
+            <div class="projects__item__tags"></div>
           </div>
-          <div class="projects__item__tags"></div>
           <div class="projects__item__btn">
-            <a href="#" class="button-1">Live Preview</a>
-            <a href="#" class="button-1">Source Code</a>
+            <a href="#" class="button-1">Preview</a>
+            <a href="#" class="button-1">Code</a>
           </div>
         </div>
         <div></div>
         <div class="projects__item">
           <div class="projects__item__content">
             <span class="body-incon-5">December 25, 2023</span>
-            <h3 class="heading-projects">
+            <h3 class="heading-projects" :style="{ padding: '2rem 0' }">
               Please put the title of the project here
             </h3>
+            <div class="projects__item__tags"></div>
           </div>
-          <div class="projects__item__tags"></div>
           <div class="projects__item__btn">
-            <a href="#" class="button-1">Live Preview</a>
-            <a href="#" class="button-1">Source Code</a>
+            <a href="#" class="button-1">Preview</a>
+            <a href="#" class="button-1">Code</a>
           </div>
         </div>
       </div>
@@ -75,7 +78,7 @@
 <style scoped>
 .projects__items {
   display: grid;
-  grid-template-rows: repeat(2, 500px);
+  grid-template-rows: repeat(2, 520px);
   gap: 2rem;
 }
 .projects__items__top {
@@ -92,6 +95,12 @@
   border: var(--b-1);
   border-radius: var(--br-3);
   padding: 3rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects__item__btn {
+  display: flex;
+  gap: 20px;
 }
 </style>
