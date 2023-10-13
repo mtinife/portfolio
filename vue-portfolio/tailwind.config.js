@@ -15,7 +15,13 @@ module.exports = {
     },
     fontSize: {
       sm: ["1.25em", "100%"],
+      sx: ["1.875em", "100%"],
+      mx: ["3em", "100%"],
+      md: ["3.75em", "100%"],
+      lg: ["4.5em", "100%"],
+      lx: ["11.25em", "100%"],
       base: ["13.75em", "80%"] /* 220px */,
+      xl: ["25em", "100%"],
     },
     fontFamily: {
       bebas: "Bebas Neue",
