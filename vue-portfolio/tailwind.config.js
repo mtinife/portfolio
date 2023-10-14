@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     fontSize: {
+      xs: ["1.125em", "100%"],
       sm: ["1.25em", "100%"],
       sx: ["1.875em", "100%"],
       mx: ["3em", "100%"],
@@ -33,6 +34,7 @@ module.exports = {
       padding: "2rem",
     },
     screens: {
+      mobile: "320px",
       tablet: "640px",
       laptop: "1024px",
       desktop: "1280px",

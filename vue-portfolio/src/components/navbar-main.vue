@@ -33,7 +33,7 @@ export default {
       </li>
     </ul>
     <a
-      class="py-7 px-10 bg-ra-dark text-ra-gold uppercase rounded-sm hover:bg-ra-gold hover:text-ra-gold text-lg"
+      class="py-7 px-10 bg-ra-dark text-ra-gold uppercase rounded-sm hover:bg-ra-gold hover:text-ra-gold"
     >
       Hire Me
     </a>
