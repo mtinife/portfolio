@@ -9,6 +9,8 @@ module.exports = {
     colors: {
       ra: {
         dark: "#3E0709",
+        trans: "rgba(62, 7, 9, 0.7)",
+        darker: "#250406",
         red: "#6E090C",
         gold: "#D98438",
       },
@@ -32,13 +34,6 @@ module.exports = {
     },
     container: {
       padding: "2rem",
-    },
-    screens: {
-      mobile: "320px",
-      tablet: "640px",
-      laptop: "1024px",
-      desktop: "1280px",
-      ldesktop: "1920px",
     },
     borderRadius: {
       sm: "12px",

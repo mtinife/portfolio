@@ -8,8 +8,8 @@ const currentTime = new Date();
 const currentYear = currentTime.getFullYear();
 </script>
 <template>
-  <footer class="bg-ra-dark p-14 rounded-xl mobile:rounded-md mobile:p-4">
-    <h2 class="text-center font-bebas text-base uppercase mobile:text-lg">
+  <footer class="bg-ra-dark p-4 rounded-md md:rounded-xl md:p-14">
+    <h2 class="text-center font-bebas text-lg uppercase md:text-base">
       get in touch
     </h2>
     <div class="">
@@ -17,12 +17,12 @@ const currentYear = currentTime.getFullYear();
         <input
           type="email"
           placeholder="Your E-mail"
-          class="py-6 bg-ra-dark border-b font-incon text-sx text-ra-gold placeholder:text-ra-gold mobile:text-xs"
+          class="py-6 bg-ra-dark border-b font-incon text-xs text-ra-gold placeholder:text-ra-gold md:text-sx"
         />
         <select
           id="cars"
           name="cars"
-          class="py-6 bg-ra-dark border-b font-incon text-sx mobile:text-xs"
+          class="py-6 bg-ra-dark border-b font-incon text-xs md:text-xs"
         >
           <option value="">~Select Subject~</option>
           <option value="job">Job Offer</option>
@@ -34,9 +34,7 @@ const currentYear = currentTime.getFullYear();
           type="submit"
           class="flex justify-between items-center p-1 bg-ra-gold rounded-lg"
         >
-          <span class="text-ra-dark p-4 text-sx mobile:text-xs">
-            Let's Talk
-          </span>
+          <span class="text-ra-dark p-4 text-xs md:text-sx">Let's Talk</span>
           <i
             class="ri-arrow-right-up-line text-ra-gold rounded-lg bg-ra-red text-md"
           ></i>
@@ -59,30 +57,30 @@ const currentYear = currentTime.getFullYear();
     </div>
     <div class="footer__social spacing-default-1">
       <div class="body-incon-1">
-        <i class="ri-mail-line text-md"></i>
-        <span class="font-incon text-mx pl-4 mobile:text-sm mobile:pl-2">
+        <i class="ri-mail-line text-sx md:text-md"></i>
+        <span class="font-incon text-sm pl-2 md:text-mx md:pl-4">
           Direct Connect
         </span>
       </div>
       <div class="font-incon uppercase">
         <p>
-          <span class="text-mx">{</span>
-          <span class="text-sx">linkedin</span>
-          <span class="text-mx">}</span>
+          <span class="text-sm md:text-mx">{</span>
+          <span class="text-xs md:text-sx">linkedin</span>
+          <span class="text-sm md:text-mx">}</span>
         </p>
         <p>
-          <span class="text-mx">{</span>
-          <span class="text-sx">facebook</span>
-          <span class="text-mx">}</span>
+          <span class="text-sm md:text-mx">{</span>
+          <span class="text-xs md:text-sx">facebook</span>
+          <span class="text-sm md:text-mx">}</span>
         </p>
         <p>
-          <span class="text-mx">{</span>
-          <span class="text-sx">twitter</span>
-          <span class="text-mx">}</span>
+          <span class="text-sm md:text-mx">{</span>
+          <span class="text-xs md:text-sx">twitter</span>
+          <span class="text-sm md:text-mx">}</span>
         </p>
       </div>
     </div>
-    <span class="footer__copyright">
+    <span class="text-[11px]">
       &copy;{{ currentYear }} - Micah M. Tinife - Made with
       <i class="ri-heart-2-fill"></i> & Vue Js
     </span>

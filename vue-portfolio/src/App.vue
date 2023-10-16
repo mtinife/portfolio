@@ -1,14 +1,16 @@
 <script setup>
-import NavbarMain from "./components/navbar-main.vue";
+import NavbarLarge from "./components/navbar-large.vue";
+import NavbarSmall from "./components/navbar-small.vue";
 import CallToAction from "./components/call-to-action.vue";
 import FooterMain from "./components/footer-main.vue";
 </script>
 <template>
-  <section class="p-8 mx-auto bg-ra-dark mobile:p-4">
+  <section class="p-4 mx-auto bg-ra-dark md:p-8">
     <section
-      class="px-8 pb-8 rounded-xl mx-auto bg-ra-red mobile:px-4 mobile:pb-8 mobile:rounded-md"
+      class="px-4 pb-8 rounded-md mx-auto bg-ra-red md:px-8 md:pb-8 md:rounded-xl"
     >
-      <NavbarMain />
+      <NavbarLarge />
+      <NavbarSmall />
       <main>
         <router-view />
         <CallToAction />
