@@ -9,8 +9,8 @@ import FooterMain from "./components/footer-main.vue";
     <section
       class="px-4 pb-8 rounded-md mx-auto bg-ra-red md:px-8 md:pb-8 md:rounded-xl"
     >
-      <NavbarLarge />
-      <NavbarSmall />
+      <NavbarLarge class="xl:flex hidden" />
+      <NavbarSmall class="xl:hidden" />
       <main>
         <router-view />
         <CallToAction />

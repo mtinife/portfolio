@@ -9,7 +9,7 @@ module.exports = {
     colors: {
       ra: {
         dark: "#3E0709",
-        trans: "rgba(62, 7, 9, 0.7)",
+        trans: "rgba(37, 4, 6, 0.7)",
         darker: "#250406",
         red: "#6E090C",
         gold: "#D98438",

@@ -1,13 +1,13 @@
 <template>
-  <section class="about">
-    <section class="page-hero spacing-default-4 center-text">
-      <h1 class="heading-1">
+  <section class="">
+    <section class="">
+      <h1 class="">
         a *solution* to the
         <s>problems</s>
         you face
       </h1>
     </section>
-    <section class="about__skills">
+    <section class="">
       <div>
         <span class="content"></span>
         <img src="../../public/images/emoji-me-projects.png" />

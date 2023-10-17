@@ -46,7 +46,8 @@ export default {
     </ul>
     <div class="flex items-center">
       <a
-        class="flex py-6 px-12 bg-ra-dark text-ra-gold rounded-sm hover:bg-ra-gold hover:text-ra-gold"
+        href="/contact"
+        class="flex py-6 px-12 bg-ra-dark text-ra-gold rounded-sm hover:bg-ra-gold hover:text-ra-dark"
       >
         Hire Me
       </a>
