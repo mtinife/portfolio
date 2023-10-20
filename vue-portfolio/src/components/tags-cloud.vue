@@ -1,5 +1,10 @@
 <template>
-  <div class="tagsCloud" ref="tagsCloud" :style="{ height: $props.boxWidth + 'px', width: $props.boxWidth + 'px' }" @mousemove="listener($event)">
+  <div
+    class="tagsCloud"
+    ref="tagsCloud"
+    :style="{ height: props.boxWidth + 'px', width: props.boxWidth + 'px' }"
+    @mousemove="listener($event)"
+  >
     <div
       class="item"
       v-for="(item, index) in state.data"
@@ -21,11 +26,20 @@
 </template>
 
 <script setup>
-import { computed, onBeforeMount, onMounted, reactive, ref } from "vue";
-const $props = defineProps({
-  data: {
-    default: [],
-    type: Array,
+import {
+  computed,
+  onBeforeMount,
+  onMounted,
+  reactive,
+  ref,
+  defineProps,
+} from "vue";
+const props = defineProps({
+  data() {
+    return {
+      default: [],
+      type: Array,
+    };
   },
   boxWidth: {
     default: 600,
@@ -42,20 +56,20 @@ const $props = defineProps({
 });
 
 const state = reactive({
-  speedX: Math.PI / $props.speed,
-  speedY: Math.PI / $props.speed,
+  speedX: Math.PI / props.speed,
+  speedY: Math.PI / props.speed,
   timer: null,
   data: [],
 });
 
-const radius = computed(() => $props.boxWidth / 3);
-const CX = computed(() => $props.boxWidth / 2);
-const CY = computed(() => $props.boxWidth / 2);
+const radius = computed(() => props.boxWidth / 3);
+const CX = computed(() => props.boxWidth / 2);
+const CY = computed(() => props.boxWidth / 2);
 
 const init = () => {
   let winWidth = document.body.clientWidth;
-  if ($props.boxWidth > winWidth) {
-    $props.boxWidth = winWidth;
+  if (props.boxWidth > winWidth) {
+    data.boxWidth = winWidth;
   }
 
   state.data.forEach((item, key) => {
@@ -69,12 +83,16 @@ const init = () => {
     item.z = radius.value * Math.cos(a);
 
     // random color
-    if ($props.randomColor) {
-      item.rcolor = `rgb(${parseInt(Math.random() * 255)}, ${parseInt(Math.random() * 255)}, ${parseInt(Math.random() * 255)})`;
+    if (props.randomColor) {
+      item.rcolor = `
+        rgb(${parseInt(Math.random() * 255)}, 
+        ${parseInt(Math.random() * 255)}, 
+        ${parseInt(Math.random() * 255)})
+      `;
     }
 
     // Z-index
-    item.zindex = parseInt(($props.boxWidth / ($props.boxWidth - item.z)) * 100);
+    item.zindex = parseInt((props.boxWidth / (props.boxWidth - item.z)) * 100);
   });
 };
 
@@ -85,7 +103,7 @@ const rotateX = () => {
   state.data.forEach((item, key) => {
     item.y = (item.y - CY.value) * cos - item.z * sin + CY.value;
     item.z = item.z * cos + (item.y - CY.value) * sin;
-    item.zindex = parseInt(($props.boxWidth / ($props.boxWidth - item.z)) * 100);
+    item.zindex = parseInt((props.boxWidth / (props.boxWidth - item.z)) * 100);
   });
 };
 
@@ -96,7 +114,7 @@ const rotateY = () => {
   state.data.forEach((item) => {
     item.x = (item.x - CX.value) * cos - item.z * sin + CX.value;
     item.z = item.z * cos + (item.x - CX.value) * sin;
-    item.zindex = parseInt(($props.boxWidth / ($props.boxWidth - item.z)) * 100);
+    item.zindex = parseInt((props.boxWidth / (props.boxWidth - item.z)) * 100);
   });
 };
 
@@ -109,8 +127,14 @@ const listener = (event) => {
   var y = event.clientY - refY - CY.value;
 
   // this.x + CX - this.ele.offsetWidth/2 +"px";
-  state.speedY = x * 0.0001 > 0 ? Math.min(radius.value * 0.00002, x * 0.0001) : Math.max(-radius.value * 0.00002, x * 0.0001);
-  state.speedX = y * 0.0001 > 0 ? Math.min(radius.value * 0.00002, y * 0.0001) : Math.max(-radius.value * 0.00002, y * 0.0001);
+  state.speedY =
+    x * 0.0001 > 0
+      ? Math.min(radius.value * 0.00002, x * 0.0001)
+      : Math.max(-radius.value * 0.00002, x * 0.0001);
+  state.speedX =
+    y * 0.0001 > 0
+      ? Math.min(radius.value * 0.00002, y * 0.0001)
+      : Math.max(-radius.value * 0.00002, y * 0.0001);
 };
 
 const toUrl = (url) => {
@@ -118,7 +142,7 @@ const toUrl = (url) => {
 };
 
 onMounted(() => {
-  state.data = $props.data;
+  state.data = props.data;
   init();
 });
 

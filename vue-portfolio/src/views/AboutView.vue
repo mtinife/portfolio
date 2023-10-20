@@ -1,3 +1,7 @@
+<script setup>
+import TagsCloud from "@/components/tags-cloud.vue";
+import { tagCloudData } from "@/data/tagCloudData";
+</script>
 <template>
   <section class="mt-10">
     <section class="">
@@ -9,7 +13,9 @@
     </section>
     <section class="xl:flex xl:flex-row">
       <div class="xl:basis-3/4">
-        <span class="contents"></span>
+        <div class="box">
+          <TagsCloud :data="tagCloudData" />
+        </div>
         <img class="xl:w-2/3" src="../../public/images/emoji-me-projects.png" />
       </div>
       <div class="xl:basis-1/4 xl:grid xl:items-end">
