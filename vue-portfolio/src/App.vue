@@ -7,7 +7,7 @@ import FooterMain from "./components/footer-main.vue";
 <template>
   <section class="p-4 mx-auto bg-ra-dark md:p-8">
     <section
-      class="px-4 pb-8 rounded-md mx-auto bg-ra-red md:px-8 md:pb-8 md:rounded-xl"
+      class="px-4 py-4 rounded-md mx-auto bg-ra-red md:px-8 md:pb-8 md:pt-0 md:rounded-xl"
     >
       <NavbarLarge class="xl:flex hidden" />
       <NavbarSmall class="xl:hidden" />

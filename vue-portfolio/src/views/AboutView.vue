@@ -1,10 +1,15 @@
-<script setup>
-import TagsCloud from "@/components/tags-cloud.vue";
-import { tagCloudData } from "@/data/tagCloudData";
+<script>
+import WordSphere from "wordsphere";
+
+export default {
+  components: {
+    WordSphere,
+  },
+};
 </script>
 <template>
-  <section class="mt-10">
-    <section class="">
+  <section class="">
+    <section class="p-10 xl:p-16">
       <h1 class="font-bebas text-md text-center xl:text-lx xl:leading-[0.9em]">
         a *solution* to the
         <s>problems</s>
@@ -12,11 +17,35 @@ import { tagCloudData } from "@/data/tagCloudData";
       </h1>
     </section>
     <section class="xl:flex xl:flex-row">
-      <div class="xl:basis-3/4">
-        <div class="box">
-          <TagsCloud :data="tagCloudData" />
+      <div
+        class="xl:basis-3/4 relative xl:h-[54rem] right-0 overflow-hidden floating-sphere-img"
+      >
+        <div class="box absolute right-64 z-40">
+          <WordSphere
+            id="id_sphere_object"
+            ref="refSphereObject"
+            :items_list="[
+              'JAVASCRIPT',
+              'VUE JS',
+              'REACT JS',
+              'FRONT-END',
+              'BACK-END',
+              'DATABASE',
+              'SQL',
+              'HTML',
+              'CSS',
+              'WEBSITE',
+              'APPLICATIONS',
+            ]"
+            :radius="10"
+            :text_color="'#D98438'"
+            :font_size_max="2"
+          />
         </div>
-        <img class="xl:w-2/3" src="../../public/images/emoji-me-projects.png" />
+        <img
+          class="xl:w-3/6 absolute right-0 z-0"
+          src="../../public/images/emoji-me-projects.png"
+        />
       </div>
       <div class="xl:basis-1/4 xl:grid xl:items-end">
         <p class="font-incon text-sm">
@@ -76,3 +105,14 @@ import { tagCloudData } from "@/data/tagCloudData";
     </article>
   </section>
 </template>
+<style scoped>
+.floating-sphere-img {
+  display: grid;
+}
+.floating-sphere-img div {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.floating-sphere-img img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+</style>

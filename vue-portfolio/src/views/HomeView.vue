@@ -1,12 +1,15 @@
+<script setup>
+import MyProcess from "../components/my-process.vue";
+</script>
 <template>
-  <section class="mt-10">
+  <section class="">
     <section class="xl:flex xl:flex-row">
-      <h1 class="font-bebas text-ra-gold text-md md:text-base xl:basis-3/4">
+      <h1 class="font-bebas text-ra-gold text-md md:text-base xl:basis-4/6">
         I <span class="font-vibes">Design</span> &
         <br />
         { Develop } Software Applications.
       </h1>
-      <div class="xl:basis-1/4">
+      <div class="xl:basis-2/6">
         <div class="relative">
           <span class="home-quotation">&#10078;</span>
           <p class="font-incon text-sm absolute top-0 z-0">
@@ -102,92 +105,7 @@
       </ul>
     </section>
   </section>
-  <section class="bg-ra-dark p-4 rounded-md md:p-12 sm:rounded-xl my-32">
-    <div class="">
-      <div class="xl:flex xl:flex-row xl:gap-8 grid gap-8 xl:my-32">
-        <div class="xl:flex-initial">
-          <h3 class="font-robo uppercase text-sx md:text-mx">
-            my
-            <br />
-            process
-          </h3>
-          <p class="xl:pr-12 font-robo text-sm md:text-sm">
-            The goal is to getting an idea of what you're looking for; each
-            project is different and offers different challenges and solutions.
-            I have a 7 step process I take client through
-          </p>
-        </div>
-        <div class="xl:flex-initial">
-          <span class="font-robo text-sx md:text-mx">01</span>
-          <hr />
-          <h4 class="font-bebas text-mx md:text-lg">intro call</h4>
-          <p class="font-robo text-xs md:text-sm">
-            The first step in the process. A friendly call on what your needs
-            and visions are
-          </p>
-        </div>
-        <div>
-          <span class="font-robo text-sx md:text-mx">02</span>
-          <hr />
-          <h4 class="font-bebas text-mx md:text-lg">discovery</h4>
-          <p class="font-robo text-xs md:text-sm">
-            We look for possible solutions to the problems your facing
-          </p>
-        </div>
-        <div>
-          <span class="font-robo text-sx md:text-mx">03</span>
-          <hr />
-          <h4 class="font-bebas text-mx md:text-lg">wireframe</h4>
-          <p class="font-robo text-xs md:text-sm">
-            Mocking up the solutions and how they will be implemented
-          </p>
-        </div>
-      </div>
-      <div class="xl:flex xl:flex-row xl:py-24 xl:gap-8 grid gap-8">
-        <div class="mt-8 xl:mt-0">
-          <span class="font-robo text-sx md:text-mx">04</span>
-          <hr />
-          <h4 class="font-bebas text-mx md:text-lg">design</h4>
-          <p class="font-robo text-xs md:text-sm">
-            From the mock ups a final design draft is created and prep for
-            development
-          </p>
-        </div>
-        <div>
-          <span class="font-robo text-sx md:text-mx">05</span>
-          <hr />
-          <h4 class="font-bebas text-mx md:text-lg">development</h4>
-          <p class="font-robo text-xs md:text-sm">
-            Setting up all the technical components and software needed for the
-            project
-          </p>
-        </div>
-        <div>
-          <span class="font-robo text-sx md:text-mx">06</span>
-          <hr />
-          <h4 class="font-bebas text-mx md:text-lg">content upload</h4>
-          <p class="font-robo text-xs md:text-sm">
-            Ensuring all content and messaging is correct. Blogs, Press Policies
-            and other content content are up to date
-          </p>
-        </div>
-        <div>
-          <span class="font-robo text-sx md:text-mx">07</span>
-          <hr />
-          <h4 class="font-bebas text-mx md:text-lg">launch & support</h4>
-          <p class="font-robo text-xs md:text-sm">
-            Launch the project with guides and documentation (text and visual)
-            of the project. Setting up a maintenance process and a schedule for
-            when it will be completed
-          </p>
-        </div>
-      </div>
-      <p class="font-robo text-xs md:text-sm my-8">
-        *Every project is special, my process can adapt to your projects
-        regardless of where they are in the process.
-      </p>
-    </div>
-  </section>
+  <MyProcess />
   <section class="mt-32">
     <h2 class="font-bebas text-center text-lg md:text-xl">/*FAQ*/</h2>
     <ul role="list" class="">

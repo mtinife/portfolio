@@ -3,13 +3,13 @@
     class="p-4 bg-ra-gold rounded-md md:rounded-xl md:px-14 md:py-28 xl:flex xl:justify-between my-32"
   >
     <div>
-      <h6 class="font-robo font-black text-sm text-ra-dark md:text-lg">
+      <h6 class="font-robo font-black text-sx text-ra-dark md:text-lg">
         Let's get started,
         <br />
         your dream project can't wait.
       </h6>
     </div>
-    <div class="xl:flex xl:items-center mt-8 xl:mt-0">
+    <div class="flex justify-end xl:flex xl:items-center mt-8 xl:mt-0">
       <router-link
         to="/contact"
         class="flex xl:flex-auto justify-between items-center p-1 bg-ra-dark rounded-lg"
