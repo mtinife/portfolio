@@ -3,7 +3,7 @@ import MyProcess from "../components/my-process.vue";
 </script>
 <template>
   <section class="">
-    <section class="p-10 xl:p-16">
+    <section class="p-10 m-0 xl:p-16">
       <h1 class="font-bebas text-md text-center xl:text-lx">
         how i <u>work</u> so<br />
         <s>you don't have to</s>
