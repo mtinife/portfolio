@@ -1,5 +1,6 @@
 <script setup>
 import MyProcess from "../components/my-process.vue";
+import AccordionPanel from "@/components/AccordionPanel.vue";
 </script>
 <template>
   <section class="">
@@ -123,34 +124,34 @@ import MyProcess from "../components/my-process.vue";
   <section class="mt-32">
     <h2 class="font-bebas text-center text-lg md:text-xl">/*FAQ*/</h2>
     <ul role="list" class="">
-      <li class="font-robo border-b text-sm md:text-sx">
+      <AccordionPanel
+        aria-title="incidents"
+        title="What is the best way to get involved?"
+        count="01"
+        class="font-robo border-b text-sm md:text-sx"
+      >
+      </AccordionPanel>
+      <AccordionPanel class="font-robo border-b text-sm md:text-sx">
         <span>/01</span>
         <span>What to bring to being the process?</span>
         <span>
           <i class="ri-arrow-right-down-line"></i>
         </span>
-      </li>
-      <li class="font-robo border-b text-sm md:text-sx">
+      </AccordionPanel>
+      <AccordionPanel class="font-robo border-b text-sm md:text-sx">
         <span>/01</span>
         <span>What to bring to being the process?</span>
         <span>
           <i class="ri-arrow-right-down-line"></i>
         </span>
-      </li>
-      <li class="font-robo border-b text-sm md:text-sx">
+      </AccordionPanel>
+      <AccordionPanel class="font-robo border-b text-sm md:text-sx">
         <span>/01</span>
         <span>What to bring to being the process?</span>
         <span>
           <i class="ri-arrow-right-down-line"></i>
         </span>
-      </li>
-      <li class="font-robo border-b text-sm md:text-sx">
-        <span>/01</span>
-        <span>What to bring to being the process?</span>
-        <span>
-          <i class="ri-arrow-right-down-line"></i>
-        </span>
-      </li>
+      </AccordionPanel>
     </ul>
   </section>
 </template>

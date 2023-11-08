@@ -14,7 +14,7 @@ export default {
       <li class="flex">
         <router-link
           to="/about"
-          class="py-6 px-12 bg-ra-dark rounded-bl-sm rounded-tl-sm hover:bg-ra-gold hover:text-ra-dark"
+          class="py-6 px-12 rounded-bl-sm rounded-tl-sm hover:bg-ra-gold hover:text-ra-dark"
         >
           About
         </router-link>
@@ -22,7 +22,7 @@ export default {
       <li class="flex">
         <router-link
           to="/projects"
-          class="py-6 px-12 bg-ra-dark hover:bg-ra-gold hover:text-ra-dark"
+          class="py-6 px-12 hover:bg-ra-gold hover:text-ra-dark"
         >
           Projects
         </router-link>
@@ -30,7 +30,7 @@ export default {
       <li class="flex">
         <router-link
           to="/services"
-          class="py-6 px-12 bg-ra-dark hover:bg-ra-gold hover:text-ra-dark"
+          class="py-6 px-12 hover:bg-ra-gold hover:text-ra-dark"
         >
           Services
         </router-link>
@@ -38,7 +38,7 @@ export default {
       <li class="flex">
         <router-link
           to="/contact"
-          class="py-6 px-12 bg-ra-dark rounded-br-sm rounded-tr-sm hover:bg-ra-gold hover:text-ra-dark"
+          class="py-6 px-12 rounded-br-sm rounded-tr-sm hover:bg-ra-gold hover:text-ra-dark"
         >
           Contact
         </router-link>
@@ -47,7 +47,7 @@ export default {
     <div class="flex items-center">
       <a
         href="/contact"
-        class="flex py-6 px-12 bg-ra-dark text-ra-gold rounded-sm hover:bg-ra-gold hover:text-ra-dark"
+        class="flex py-6 px-12 text-ra-gold rounded-sm hover:bg-ra-gold hover:text-ra-dark"
       >
         Hire Me
       </a>

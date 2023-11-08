@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     colors: {
       ra: {
+        black: "#000000",
         dark: "#3E0709",
         trans: "rgba(37, 4, 6, 0.7)",
         darker: "#250406",
