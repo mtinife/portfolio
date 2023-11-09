@@ -9,7 +9,7 @@ export default {
 </script>
 <template>
   <section class="">
-    <section class="p-10 m-0 xl:p-16">
+    <section class="m-0">
       <h1 class="font-bebas text-md text-center xl:text-lx xl:leading-[0.9em]">
         a *solution* to the
         <s>problems</s>
@@ -44,7 +44,7 @@ export default {
         </div>
         <img
           class="xl:w-3/6 absolute right-0 z-0"
-          src="../../public/images/emoji-me-projects.png"
+          src="../../public/images/me-projects.png"
         />
       </div>
       <div class="xl:basis-1/4 xl:grid xl:items-end">

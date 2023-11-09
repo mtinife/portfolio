@@ -4,7 +4,7 @@ import AccordionPanel from "@/components/AccordionPanel.vue";
 </script>
 <template>
   <section class="">
-    <section class="xl:flex xl:flex-row">
+    <section class="xl:flex xl:flex-row xl:mt-10">
       <h1
         class="font-bebas text-ra-gold md:m-0 text-md md:text-base xl:basis-4/6"
       >
@@ -38,7 +38,7 @@ import AccordionPanel from "@/components/AccordionPanel.vue";
             - Les Brown
           </p>
         </div>
-        <img alt="" src="../../public/images/emoji-me-home.png" />
+        <img alt="" src="../../public/images/me-home.png" />
       </div>
     </section>
     <article class="xl:grid xl:grid-cols-2 my-32">

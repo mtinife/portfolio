@@ -1,6 +1,6 @@
 <template>
   <section class="">
-    <section class="py-10 px-4 m-0 xl:p-16">
+    <section class="m-0">
       <h1 class="font-bebas text-md text-center xl:text-lx">
         { contacting } me, it's<br />
         just a click away

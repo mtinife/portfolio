@@ -18,7 +18,7 @@ export default {
       to="/"
       class="bg-ra-darker flex items-center gap-2 p-5 rounded-[9px]"
     >
-      <img src="../assets/mylogo.png" class="w-5" />
+      <img src="../assets/dark-logo-1.png" class="w-5" />
       <span>home</span>
     </router-link>
     <nav relative>

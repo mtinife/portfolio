@@ -7,7 +7,7 @@ export default {
   <nav class="relative flex justify-between z-40 font-robo uppercase">
     <div class="">
       <router-link to="/">
-        <img class="w-20" alt="Logo banner" src="../assets/logo.png" />
+        <img class="w-20" alt="Logo banner" src="../assets/dark-logo-1.png" />
       </router-link>
     </div>
     <ul role="list" class="rounded-sm flex items-center">
@@ -54,3 +54,9 @@ export default {
     </div>
   </nav>
 </template>
+<style>
+a.router-link-active {
+  color: #3e0709;
+  background-color: #d98438;
+}
+</style>
