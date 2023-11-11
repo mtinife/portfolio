@@ -1,6 +1,14 @@
 <script setup>
 import MyProcess from "../components/my-process.vue";
-import AccordionPanel from "@/components/AccordionPanel.vue";
+import AccordionPanel from "../components/AccordionPanel.vue";
+</script>
+<script>
+export default {
+  name: "accordions-list",
+  components: {
+    AccordionPanel,
+  },
+};
 </script>
 <template>
   <section class="">
@@ -50,7 +58,9 @@ import AccordionPanel from "@/components/AccordionPanel.vue";
             is client centered, making sure my clients are taking care of in a
             wide range of areas.
           </p>
-          <p class="font-robo font-thin py-16 leading-6 text-xs md:text-sx">
+          <p
+            class="font-robo font-thin py-16 leading-normal text-xs md:text-sx"
+          >
             I found that clients needed more than just good software and
             applications; they need someone that understands their projects and
             can grow with their project.
@@ -123,34 +133,54 @@ import AccordionPanel from "@/components/AccordionPanel.vue";
   <MyProcess />
   <section class="mt-32">
     <h2 class="font-bebas text-center text-lg md:text-xl">/*FAQ*/</h2>
-    <ul role="list" class="">
-      <AccordionPanel
-        aria-title="incidents"
-        title="What is the best way to get involved?"
-        count="01"
-        class="font-robo border-b text-sm md:text-sx"
-      >
+    <ul role="list" id="accordions-list" class="md:pl-96">
+      <AccordionPanel class="mb-4">
+        <template v-slot:count>
+          <span class="">01</span>
+        </template>
+        <template v-slot:title>
+          <span class="font-semibold text-md">Accordion 1</span>
+        </template>
+        <template v-slot:content>
+          <p>
+            <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit.
+            porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
+            accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
+            itaque consectetur impedit?
+          </p>
+        </template>
       </AccordionPanel>
-      <AccordionPanel class="font-robo border-b text-sm md:text-sx">
-        <span>/01</span>
-        <span>What to bring to being the process?</span>
-        <span>
-          <i class="ri-arrow-right-down-line"></i>
-        </span>
+      <AccordionPanel class="mb-4">
+        <template v-slot:count>
+          <span class="">01</span>
+        </template>
+        <template v-slot:title>
+          <span class="font-semibold text-md">Accordion 1</span>
+        </template>
+        <template v-slot:content>
+          <p>
+            <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit.
+            porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
+            accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
+            itaque consectetur impedit?
+          </p>
+        </template>
       </AccordionPanel>
-      <AccordionPanel class="font-robo border-b text-sm md:text-sx">
-        <span>/01</span>
-        <span>What to bring to being the process?</span>
-        <span>
-          <i class="ri-arrow-right-down-line"></i>
-        </span>
-      </AccordionPanel>
-      <AccordionPanel class="font-robo border-b text-sm md:text-sx">
-        <span>/01</span>
-        <span>What to bring to being the process?</span>
-        <span>
-          <i class="ri-arrow-right-down-line"></i>
-        </span>
+      <AccordionPanel class="mb-4">
+        <template v-slot:count>
+          <span class="">01</span>
+        </template>
+        <template v-slot:title>
+          <span class="font-semibold text-md">Accordion 1</span>
+        </template>
+        <template v-slot:content>
+          <p>
+            <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit.
+            porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
+            accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
+            itaque consectetur impedit?
+          </p>
+        </template>
       </AccordionPanel>
     </ul>
   </section>

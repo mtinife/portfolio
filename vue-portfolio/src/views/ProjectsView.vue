@@ -10,7 +10,7 @@
         been a part of.
       </p>
     </section>
-    <section class="grid gap-10">
+    <section class="grid gap-10 pt-20">
       <div class="grid gap-10 xl:grid xl:grid-cols-6 xl:gap-8">
         <div></div>
         <div

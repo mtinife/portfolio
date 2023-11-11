@@ -10,11 +10,11 @@ export default {
         <img class="w-20" alt="Logo banner" src="../assets/dark-logo-1.png" />
       </router-link>
     </div>
-    <ul role="list" class="rounded-sm flex items-center">
+    <ul role="list" class="rounded-sm flex items-center navMenu">
       <li class="flex">
         <router-link
           to="/about"
-          class="py-6 px-12 rounded-bl-sm rounded-tl-sm hover:bg-ra-gold hover:text-ra-dark"
+          class="py-6 px-12 rounded-bl-sm rounded-tl-sm hover:bg-ra-gold hover:text-ra-dark hover:font-bold"
         >
           About
         </router-link>
@@ -22,7 +22,7 @@ export default {
       <li class="flex">
         <router-link
           to="/projects"
-          class="py-6 px-12 hover:bg-ra-gold hover:text-ra-dark"
+          class="py-6 px-12 hover:bg-ra-gold hover:text-ra-dark hover:font-bold"
         >
           Projects
         </router-link>
@@ -30,7 +30,7 @@ export default {
       <li class="flex">
         <router-link
           to="/services"
-          class="py-6 px-12 hover:bg-ra-gold hover:text-ra-dark"
+          class="py-6 px-12 hover:bg-ra-gold hover:text-ra-dark hover:font-bold"
         >
           Services
         </router-link>
@@ -38,7 +38,7 @@ export default {
       <li class="flex">
         <router-link
           to="/contact"
-          class="py-6 px-12 rounded-br-sm rounded-tr-sm hover:bg-ra-gold hover:text-ra-dark"
+          class="py-6 px-12 rounded-br-sm rounded-tr-sm hover:bg-ra-gold hover:text-ra-dark hover:font-bold"
         >
           Contact
         </router-link>
@@ -55,8 +55,8 @@ export default {
   </nav>
 </template>
 <style>
-a.router-link-active {
+.navMenu li a.router-link-active {
   color: #3e0709;
-  background-color: #d98438;
+  background-color: #f28907;
 }
 </style>

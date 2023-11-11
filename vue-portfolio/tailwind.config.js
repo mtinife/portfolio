@@ -8,18 +8,19 @@ module.exports = {
   theme: {
     colors: {
       ra: {
-        black: '#000000',
+        black: '#0D0D0D',
         dark: '#3E0709',
         trans: 'rgba(37, 4, 6, 0.7)',
         darker: '#250406',
         red: '#6E090C',
-        gold: '#D98438',
+        /*gold: '#D98438',*/
+        gold: '#F28907',
       },
     },
     fontSize: {
       xs: ['1.125em', '100%'],
       sm: ['1.25em', '100%'],
-      sx: ['1.875em', '100%'],
+      sx: ['1.875em'],
       mx: ['3em', '100%'],
       md: ['3.75em', '100%'],
       lg: ['4.5em', '100%'],

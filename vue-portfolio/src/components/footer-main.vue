@@ -44,16 +44,24 @@ const currentYear = currentTime.getFullYear();
       </form>
       <ul role="list" class="grid basis-1/4 pt-16 xl:pt-0">
         <li class="border-y py-4">
-          <router-link to="/about" class="uppercase">About</router-link>
+          <router-link to="/about" class="uppercase hover:font-bold">
+            About
+          </router-link>
         </li>
         <li class="border-b py-4">
-          <router-link to="/projects" class="uppercase">projects</router-link>
+          <router-link to="/projects" class="uppercase hover:font-bold">
+            projects
+          </router-link>
         </li>
         <li class="border-b py-4">
-          <router-link to="/services" class="uppercase">services</router-link>
+          <router-link to="/services" class="uppercase hover:font-bold">
+            services
+          </router-link>
         </li>
         <li class="border-b py-4">
-          <router-link to="/contact" class="uppercase">Contact</router-link>
+          <router-link to="/contact" class="uppercase hover:font-bold">
+            Contact
+          </router-link>
         </li>
       </ul>
     </div>
@@ -65,21 +73,21 @@ const currentYear = currentTime.getFullYear();
         </span>
       </div>
       <div class="xl:flex xl:gap-10 grid gap-5 mt-5 font-incon uppercase">
-        <p>
+        <a href="#" class="hover:font-bold">
           <span class="text-sm md:text-mx">{</span>
           <span class="text-xs md:text-sx">linkedin</span>
           <span class="text-sm md:text-mx">}</span>
-        </p>
-        <p>
+        </a>
+        <a href="#" class="hover:font-bold">
           <span class="text-sm md:text-mx">{</span>
           <span class="text-xs md:text-sx">facebook</span>
           <span class="text-sm md:text-mx">}</span>
-        </p>
-        <p>
+        </a>
+        <a href="#" class="hover:font-bold">
           <span class="text-sm md:text-mx">{</span>
           <span class="text-xs md:text-sx">twitter</span>
           <span class="text-sm md:text-mx">}</span>
-        </p>
+        </a>
       </div>
     </div>
     <span class="text-[11px]">
