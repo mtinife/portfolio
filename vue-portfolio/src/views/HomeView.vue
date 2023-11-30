@@ -4,7 +4,7 @@ import AccordionPanel from "../components/AccordionPanel.vue";
 </script>
 <script>
 export default {
-  name: "accordions-list",
+  name: "AccordionsList",
   components: {
     AccordionPanel,
   },
@@ -22,7 +22,7 @@ export default {
       </h1>
       <div class="xl:basis-2/6">
         <div class="relative">
-          <span class="home-quotation">
+          <span class="absolute home-quotation">
             <svg
               fill="#3E0709"
               width="100px"
@@ -133,16 +133,16 @@ export default {
   <MyProcess />
   <section class="mt-32">
     <h2 class="font-bebas text-center text-lg md:text-xl">/*FAQ*/</h2>
-    <ul role="list" id="accordions-list" class="md:pl-96">
-      <AccordionPanel class="mb-4">
-        <template v-slot:count>
+    <ul id="AccordionsList" role="list" class="md:pl-96">
+      <AccordionPanel class="py-6 border-y">
+        <template #count>
           <span class="">01</span>
         </template>
-        <template v-slot:title>
-          <span class="font-semibold text-md">Accordion 1</span>
+        <template #title>
+          <span class="font-semibold text-mx">Accordion 1</span>
         </template>
-        <template v-slot:content>
-          <p>
+        <template #content>
+          <p class="text-sm py-10 pl-6 pr-40 leading-normal">
             <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit.
             porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
             accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
@@ -150,15 +150,15 @@ export default {
           </p>
         </template>
       </AccordionPanel>
-      <AccordionPanel class="mb-4">
-        <template v-slot:count>
-          <span class="">01</span>
+      <AccordionPanel class="py-6 border-b">
+        <template #count>
+          <span class="">02</span>
         </template>
-        <template v-slot:title>
-          <span class="font-semibold text-md">Accordion 1</span>
+        <template #title>
+          <span class="font-semibold text-mx">Accordion 2</span>
         </template>
-        <template v-slot:content>
-          <p>
+        <template #content>
+          <p class="text-sm py-10 pl-6 pr-40 leading-normal">
             <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit.
             porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
             accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
@@ -166,15 +166,31 @@ export default {
           </p>
         </template>
       </AccordionPanel>
-      <AccordionPanel class="mb-4">
-        <template v-slot:count>
-          <span class="">01</span>
+      <AccordionPanel class="py-6 border-b">
+        <template #count>
+          <span class="">03</span>
         </template>
-        <template v-slot:title>
-          <span class="font-semibold text-md">Accordion 1</span>
+        <template #title>
+          <span class="font-semibold text-mx">Accordion 3</span>
         </template>
-        <template v-slot:content>
-          <p>
+        <template #content>
+          <p class="text-sm py-10 pl-6 pr-40 leading-normal">
+            <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit.
+            porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
+            accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea
+            itaque consectetur impedit?
+          </p>
+        </template>
+      </AccordionPanel>
+      <AccordionPanel class="py-6 border-b">
+        <template #count>
+          <span class="">04</span>
+        </template>
+        <template #title>
+          <span class="font-semibold text-mx">Accordion 4</span>
+        </template>
+        <template #content>
+          <p class="text-sm py-10 pl-6 pr-40 leading-normal">
             <b>Lorem</b>, ipsum dolor sit amet consectetur adipisicing elit.
             porro. Non a excepturi, voluptatibus ipsam magnam, eligendi,
             accusantium ipsa quae quis praesentium voluptate saepe ullam sint ea

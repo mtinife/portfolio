@@ -13,15 +13,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: HomeView,
-    meta: {
-      title: "Micah M Tinife | Software Developer",
-      metaTag: [
-        {
-          name: "description",
-          content: "The home page to Micah Tinife's portfolio",
-        },
-      ],
-    },
   },
   {
     path: "/about",
@@ -46,8 +37,11 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
+  scrollBehavior() {
+    return { top: 0, left: 0 };
+  },
 });
 
 export default router;

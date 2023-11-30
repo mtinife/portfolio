@@ -16,6 +16,9 @@ export default defineComponent({
         scrollBtn.classList.add("invisible");
       }
     },
+    scrollToTop() {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    },
   },
 });
 </script>
@@ -25,7 +28,7 @@ export default defineComponent({
     class="sticky w-full flex justify-end bottom-0 pb-3 pr-5 transition"
   >
     <div class="text-gray-400 hover:text-blue-400 transition">
-      <button>scroll to top</button>
+      <button @click="scrollToTop">scroll to top</button>
     </div>
   </div>
 </template>

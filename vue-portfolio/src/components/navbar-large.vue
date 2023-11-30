@@ -1,10 +1,44 @@
 <script>
+const OFFSET = 60;
 export default {
   name: "NavbarLarge",
+  data() {
+    return {
+      showNavbar: true,
+      lastScrollPosition: 0,
+      scrollValue: 0,
+    };
+  },
+  mounted() {
+    this.lastScrollPosition = window.scrollY;
+    window.addEventListener("scroll", this.onScroll);
+    const viewportMeta = document.createElement("meta");
+    viewportMeta.name = "viewport";
+    viewportMeta.content = "width=device-width, initial-scale=1";
+    document.head.appendChild(viewportMeta);
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.onScroll);
+  },
+  methods: {
+    onScroll() {
+      if (window.scrollY < 0) {
+        return;
+      }
+      if (Math.abs(window.scrollY - this.lastScrollPosition) < OFFSET) {
+        return;
+      }
+      this.showNavbar = window.scrollY < this.lastScrollPosition;
+      this.lastScrollPosition = window.scrollY;
+    },
+  },
 };
 </script>
 <template>
-  <nav class="relative flex justify-between z-40 font-robo uppercase">
+  <nav
+    class="header sticky top-0 flex justify-between z-40 font-robo uppercase bg-ra-black"
+    :class="{ 'is-hidden': !showNavbar }"
+  >
     <div class="">
       <router-link to="/">
         <img class="w-20" alt="Logo banner" src="../assets/dark-logo-1.png" />
@@ -58,5 +92,13 @@ export default {
 .navMenu li a.router-link-active {
   color: #3e0709;
   background-color: #f28907;
+}
+.header {
+  transform: translateY(0);
+  transition: transform 300ms linear;
+}
+
+.header.is-hidden {
+  transform: translateY(-100%);
 }
 </style>

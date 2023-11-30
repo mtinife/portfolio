@@ -10,7 +10,7 @@ import ToTheTop from "./components/to-the-top-btn.vue";
     <section
       class="px-4 py-4 rounded-md mx-auto bg-ra-black md:px-8 md:pb-8 md:pt-0 md:rounded-xl"
     >
-      <NavbarLarge class="xl:flex hidden" />
+      <NavbarLarge id="navbar-large" class="xl:flex hidden" />
       <NavbarSmall class="xl:hidden" />
       <main>
         <router-view />
