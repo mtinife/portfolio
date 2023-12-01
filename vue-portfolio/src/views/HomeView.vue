@@ -21,8 +21,8 @@ export default {
         { Develop } Software Applications.
       </h1>
       <div class="xl:basis-2/6">
-        <div class="relative">
-          <span class="absolute home-quotation">
+        <div class="md:relative md:left-[-50%]">
+          <span class="absolute hidden md:block home-quotation">
             <svg
               fill="#3E0709"
               width="100px"
@@ -35,7 +35,7 @@ export default {
               />
             </svg>
           </span>
-          <p class="font-incon text-sm absolute top-0 z-0">
+          <p class="font-incon text-sm md:absolute top-0 z-10 md:w-3/4">
             The graveyard is the richest place on earth, because it is here that
             you will find all the hopes and dreams that were never
             fulfilled...the inventions that were never shared, the cures that
