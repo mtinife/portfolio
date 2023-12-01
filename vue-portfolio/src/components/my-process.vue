@@ -6,15 +6,15 @@ export default {
 <template>
   <section class="bg-ra-dark p-4 rounded-md md:p-12 sm:rounded-xl my-32">
     <div class="">
-      <div class="xl:grid process-container">
-        <div class="xl:flex-initial process">
-          <h3 class="font-robo uppercase text-sx md:text-mx">
+      <div class="xl:grid gap-10 process-container">
+        <div class="relative process">
+          <h3 class="sticky top-28 font-robo uppercase text-sx md:text-mx">
             my
             <br />
             process
           </h3>
           <p
-            class="xl:pr-12 font-robo pt-8 text-sm md:text-sm md:w-2/3 leading-8"
+            class="sticky top-48 xl:pr-12 font-robo pt-8 text-sm md:text-sm md:w-2/3 leading-8"
           >
             The goal is to getting an idea of what you're looking for; each
             project is different and offers different challenges and solutions.
@@ -103,15 +103,17 @@ export default {
 </template>
 <style>
 .process-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat();
-  gap: 0px 0px;
+  grid-template-columns: 0.6fr 0.6fr 1.8fr;
+  grid-template-rows: repeat(8, 0.1fr);
   grid-template-areas:
-    "intro . . process process"
-    ". discovery . process process"
-    "content . wireframe . ."
-    ". launch . design ."
-    ". . maintenance . development";
+    "intro . process"
+    ". discovery process"
+    "wireframe . process"
+    ". design process"
+    "development . process"
+    ". content process"
+    "launch . process"
+    ". support process";
 }
 
 .process {
@@ -146,7 +148,7 @@ export default {
   grid-area: launch;
 }
 
-.maintenance {
-  grid-area: maintenance;
+.support {
+  grid-area: support;
 }
 </style>
