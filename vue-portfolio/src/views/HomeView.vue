@@ -14,7 +14,7 @@ export default {
   <section class="">
     <section class="xl:flex xl:flex-row xl:mt-10">
       <h1
-        class="font-bebas text-ra-gold md:m-0 text-md md:text-base xl:basis-4/6"
+        class="font-bebas text-ra-gold md:m-0 text-md md:text-base xl:basis-4/6 subpixel-antialiased"
       >
         I <span class="font-vibes">Design</span> &
         <br />

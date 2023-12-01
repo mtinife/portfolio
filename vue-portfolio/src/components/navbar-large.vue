@@ -36,7 +36,7 @@ export default {
 </script>
 <template>
   <nav
-    class="header sticky top-0 flex justify-between z-40 font-robo uppercase py-5 bg-ra-black"
+    class="header sticky top-0 flex justify-between z-40 font-robo uppercase py-5 bg-ra-black shadow-2xl"
     :class="{ 'is-hidden': !showNavbar }"
   >
     <div class="">

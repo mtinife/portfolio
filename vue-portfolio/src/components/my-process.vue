@@ -8,13 +8,13 @@ export default {
     <div class="">
       <div class="xl:grid gap-10 process-container">
         <div class="relative process">
-          <h3 class="sticky top-28 font-robo uppercase text-sx md:text-mx">
+          <h3 class="sticky top-36 font-robo uppercase text-sx md:text-mx">
             my
             <br />
             process
           </h3>
           <p
-            class="sticky top-48 xl:pr-12 font-robo pt-8 text-sm md:text-sm md:w-2/3 leading-8"
+            class="sticky top-56 xl:pr-12 font-robo pt-8 text-sm md:text-sm md:w-2/3 leading-8"
           >
             The goal is to getting an idea of what you're looking for; each
             project is different and offers different challenges and solutions.
