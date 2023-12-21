@@ -48,7 +48,7 @@ export default {
       <li class="flex">
         <router-link
           to="/about"
-          class="py-6 px-12 rounded-bl-sm rounded-tl-sm hover:bg-ra-gold hover:text-ra-dark hover:font-bold"
+          class="py-6 px-12 rounded-bl-sm rounded-tl-sm hover:text-ra-gold hover:font-bold"
         >
           About
         </router-link>
@@ -56,7 +56,7 @@ export default {
       <li class="flex">
         <router-link
           to="/projects"
-          class="py-6 px-12 hover:bg-ra-gold hover:text-ra-dark hover:font-bold"
+          class="py-6 px-12 hover:text-ra-gold hover:font-bold"
         >
           Projects
         </router-link>
@@ -64,7 +64,7 @@ export default {
       <li class="flex">
         <router-link
           to="/services"
-          class="py-6 px-12 hover:bg-ra-gold hover:text-ra-dark hover:font-bold"
+          class="py-6 px-12 hover:text-ra-gold hover:font-bold"
         >
           Services
         </router-link>
@@ -72,7 +72,7 @@ export default {
       <li class="flex">
         <router-link
           to="/contact"
-          class="py-6 px-12 rounded-br-sm rounded-tr-sm hover:bg-ra-gold hover:text-ra-dark hover:font-bold"
+          class="py-6 px-12 rounded-br-sm rounded-tr-sm hover:text-ra-gold hover:font-bold"
         >
           Contact
         </router-link>
@@ -81,7 +81,7 @@ export default {
     <div class="flex items-center">
       <a
         href="/contact"
-        class="flex py-6 px-12 text-ra-gold rounded-sm hover:bg-ra-gold hover:text-ra-dark"
+        class="flex py-6 px-12 text-ra-gold rounded-sm hover:bg-ra-gold hover:text-ra-dark hover:font-bold"
       >
         Hire Me
       </a>
@@ -90,8 +90,10 @@ export default {
 </template>
 <style>
 .navMenu li a.router-link-active {
-  color: #3e0709;
-  background-color: #f28907;
+  color: #f28907;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 16px;
 }
 .header {
   transform: translateY(0);
