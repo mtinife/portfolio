@@ -5,235 +5,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
 
-<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-<link rel="manifest" href="./images/favicon/site.webmanifest">
-<link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <title>Micah M. Tinife | Front-end Developer</title>
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <header class="navFloat hide" id="navFloat">
-    <ul class="navFloat__socials float-layer-1s">
-      <li><a class="float-layer-s" href="https://github.com/mtinife"><i class="ri-github-fill"></i></a></li>
-      <li><a class="float-layer-s" href="https://www.linkedin.com/in/micah-tinife/"><i class="ri-linkedin-box-fill"></i></a></li>
-    </ul>
-    <nav class="navFloat__navbar float-layer-1">
-      <div class="float-layer-menu" id="navMenu">
-        <img src="images/mylogo.png" alt="" width="25px">
-        <span style="display: block;">menu</span>
-        <i class="ri-menu-line" id="menuIcon"></i>
-      </div>
-      <ul class="float-layer-2 hide" id="navLinks">
-        <li><a class="float-layer-b" href="#home">Home</a></li>
-        <li><a class="float-layer-b" href="#projects">Projects</a></li>
-        <li><a class="float-layer-b" href="#about">About</a></li>
-        <li><a class="float-layer-b" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <ul class="navFloat__top float-layer-1s">
-      <li><a class="float-layer-s" href="#home"><i class="ri-arrow-up-s-line"></i></a></li>
-    </ul>
+  <header>
+    <div class="logo">
+      <img src="./images/logo.png" alt="">
+    </div>
+    <div>
+      <h4>Micah Tinife</h4>
+      <p>Software Engineer</p>
+    </div>
   </header>
-  <div class="scroll-downs">
-          <div class="mousey">
-            <div class="scroller"></div>
-          </div>
-        </div>
   <main>
-    <section class="home" id="home">
-      <div class="home__header">
-        <div class="home-left home__link">
-          <ul>
-            <li><a href="">home</a></li>
-            <li><a href="">projects</a></li>
-          </ul>
-        </div> 
-        <div class="logo">
-          <img src="images/mylogo.png" width="100px" height="100px" alt="">
-        </div>
-        <div class="home-right home__link">
-          <ul>
-            <li><a href="">about</a></li>
-            <li><a href="">contact</a></li>
-          </ul>
-        </div>
-        <div class="home-b-left"></div>
-        <div class="home-b-right"></div>
-      </div>
-      <article class="home__content content__bg">
-        <div class="container">
-          <div class="home__content__container content__orientation">
-        <div class="home__content__text">
-          <h1 class="heading-size-1">Front-End<br>Developer</h1>
-          <p class="para-size-2">Welcome, I'm Micah Tinife. A professional Front-End Developer working remotely and out of the DMV (District of Columbia, Maryland & Virginia)</p>
-          <div class="home__content__icons heading-size-3">
-            <a href="#"><i class="ri-github-fill"></i></a>
-            <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-          </div>
-          <div class="home__content__stack">
-            <p class="para-size-2"><strong>Tech Stack</strong></p>
-            <ul class="lang-stack">
-              <li>
-                <div class="icon-box"></div>
-            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-              </li>
-              <li>
-                <div class="icon-box"></div>
-            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-              </li>
-              <li>
-                <div class="icon-box"></div>
-            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-              </li>
-              <li>
-                <div class="icon-box"></div>
-            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />
-              </li>
-              <li>
-                <div class="icon-box"></div>
-            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-              </li>
-              <li>
-                <div class="icon-box"></div>
-            <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="home__content__img">
-          <img src="./images/emoji-me-home.png" alt="">
-        </div>
-          </div>
-        </div>
-      </article>
+    <section class="links">
+    <a href="">Github</a>
+    <a href="">linkedIn</a>
+    <a href="">Resume</a>
     </section>
-    <section class="about" id="about">
-      <section class="container">
-        <div class="about__content content__orientation">
-        <article class="about__icons">
-          <div class="sphere__container">
-            <span class="content"></span>
-            <div class="sphere"></div>
-          </div>
-          <div class="" style="display: flex;justify-content: center;">
-            <img src="images/emoji-me-projects.png" alt="">
-          </div>
-        </article>
-        <article class="about__text">
-          <p>about me</p>
-          <h3 class="heading-size-3">Professional Front-End
-Developer with 3 years 
-of experience</h3>
-          <p class="para-size-2">Front-end developer with proven ability to design and develop JavaScript-based applications for web or mobile environments. Strong knowledge of React JS, Angular, Vue JS, HTML, CSS, and Tailwind. Experienced in all stages of interface component design, from conception to final testing and deployment of web-responsive applications.</p>
-        </article>
-        </div>
-      </section>
+    <section>
+      <h1>
+          Software Engineer <span>&</span> Designer
+          <span>base in</span> Washington D.C. U.S.A.
+      </h1>
+      <p>
+          Currently working as a Front-End Developer with the
+          FCC under contract with Belcan. Adaptable and 
+          abilty to learn; being effective with new technologies
+          and company architecture, solving business focus
+          problems.
+      </p>
+      <p>
+          Worked as a Front-End Developer for 5+ years building client
+          centered software solutions. Constantly bettering my 
+          process and build complex applications.
+      </p>
     </section>
-    <section class="projects" id="projects">
-      <div class="container">
-        <div class="projects__content">
-        <p>projects</p>
-        <p class="para-size-1">Real world projects, design case studies or projects in development by me.</p>
-        <div class="projects__content__items">
-          <div class="projects__content__items__item">
-            <div class="project-img">
-              <a href="#">
-                <img src="./images/cip-landing-page.png" />
-              </a>
-            </div>
-            <div class="project-text">
-              <h6 class="para-size-1 header-cap-bold">Capital Impact Partners</h6>
-              <p class="para-size-2">A website for a non-profit that servers disadvantaged communities in key areas around the United States.</p>
-              <div class="project-tech">
-                <ul class="lang-stack">
-                  <li>
-                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                  </li>
-                  <li>
-                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                  </li>
-                </ul>
-              </div>
-              <div class="project-links">
-                <a class="para-size-2 button" href=""><i class="ri-external-link-line"></i> <span>View Site</span></a>
-                <a class="para-size-2 button-sub" href=""><i class="ri-github-fill"></i> <span>Code</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="projects__content__items__item">
-            <div class="project-text">
-              <h6 class="para-size-1 header-cap-bold">Capital Impact Partners</h6>
-              <p class="para-size-2">A website for a non-profit that servers disadvantaged communities in key areas around the United States.</p>
-              <div class="project-tech">
-                <ul class="lang-stack">
-                  <li>
-                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                  </li>
-                  <li>
-                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                  </li>
-                </ul>
-              </div>
-              <div class="project-links">
-                <a class="para-size-2 button" href=""><i class="ri-external-link-line"></i> <span>View Site</span></a>
-                <a class="para-size-2 button-sub" href=""><i class="ri-github-fill"></i> <span>Code</span></a>
-              </div>
-            </div>
-            <div class="project-img">
-              <a href="#">
-                <img src="./images/cip-landing-page.png" />
-              </a>
-            </div>
-          </div>
-          <div class="projects__content__items__item">
-            <div class="project-img">
-              <a href="#">
-                <img src="./images/cip-landing-page.png" />
-              </a>
-            </div>
-            <div class="project-text">
-              <h6 class="para-size-1 header-cap-bold">Capital Impact Partners</h6>
-              <p class="para-size-2">A website for a non-profit that servers disadvantaged communities in key areas around the United States.</p>
-              <div class="project-tech">
-                <ul class="lang-stack">
-                  <li>
-                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                  </li>
-                  <li>
-                    <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                  </li>
-                </ul>
-              </div>
-              <div class="project-links">
-                <a class="para-size-2 button" href=""><i class="ri-external-link-line"></i> <span>View Site</span></a>
-                <a class="para-size-2 button-sub" href=""><i class="ri-github-fill"></i> <span>Code</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
+    <section>
+      <span>Projects</span>
+      <h1>Websites</h1>
+      <div>
+        <a href="">FCC.GOV</a>
+        <a href="">Capital Impact Partners</a>
+        <a href="">MJ Weddings and Events</a>
+        <a href="">2Morrowsmen</a>
+        <a href="">Us Normal People</a>
       </div>
     </section>
-    <section class="contact" id="contact">
+    <section>
+      <h1>Designs</h1>
+      <div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+        <div><img src="" alt=""></div>
+      </div>
     </section>
+    <section>
+      <span>Breakdown</span>
+      <div>  
+        <p>Everything handcrafted</p>
+        <p>Written in markdown</p>
+      </div>
+      <div>
+        <p>Website Designed in Adobe XD</p>
+        <p>Logo Designed in Adobe Illustrator</p>
+        <p>Designed on Windows OS</p>
+        <p>Developed on Archlinux</p>
+        <p>Built in Nvim/Lazyvim</p>
+      </div>
+      <div>
+        <p>Used HTML&#9679;CSS&#9679;JAVASCRIPT</p>
+        <p>Tested on all browsers</p>
+        <p>Hosted on Github</p>
+      </div>
+      <div>
+        <p>Last Updated <span>(3/13/2024)</span></p>
+        <p>Domain Registered <span>(2019)</span></p>
+      </div>
+      <div>
+        <p>Current Location <span>(Washington D.C. U.S.A)</span></p>
+      </div>
+    </section> 
   </main>
   <footer>
-    
+    <div><a href=""><i class="ri-arrow-up-line"></i></a></div>
+    <div>
+      <p><a href="">Download Resume</a> <span>(PDF)</span></p>
+    </div>
+    <div>
+      <p><a href="">@ImicI</a> <i class="ri-arrow-right-up-line"></i></p>
+    </div>
+    <div>
+      <a href="">Github</a>
+      <a href="">LinkedIn</a>
+    </div>
+    <div>
+      <img src="./images/logo.png" alt="">
+      <p><a href="">logo.png</a> <span>(Micah M. Tinife Crest Logo)</span></p>
+      <p>
+          This is final form of my logo. I have worked on this logo 
+          for a while and finally created a logo that's truly and uniquely
+          mine. Infused history, an old crest style with (to me) meaningful
+          symbolism. Proud of what I created.
+      </p>
+    </div>
+    <div>
+      <p><a href="">Micah M. Tinife </a> &#9679; Copyright <i class="ri-copyright-line"></i> 2019 -  <script>document.write(new Date().getFullYear())</script></p>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
