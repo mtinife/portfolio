@@ -4,16 +4,24 @@
   --color-dark: #717171;
   --color-gray: #D6D6D6;
   --color-gray1: #C8C8C8;
+  --color-gray2: #D6D6D6;
   --color-white: #EAEAEA;
 
-  /* Sizes */
+  /* Space Sizes */
   --float-space: 6px;
   --space-1: 40px;
   --space-2: 5em;
   --diamond-size: 120px;
 
+  /* Font Family */
   --font-roboto: 'Roboto', 'Arial', sans-serif;
   --font-inco: 'Inconsolata', 'Arial', monospace;
+
+  /* Font Size */
+  --size-0: 1.875em; 
+  --size-1: 1.375em;
+  --size-2: 1.25em;
+  --size-3: 1.125em;
 
   --curved: 6px;
 }
@@ -52,8 +60,12 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  font-family: var(--font);
+  font-family: var(--font-roboto);
+  font-size: 1rem;
   overflow-x: hidden;
+  background-color: var(--color-black);
+  width: 90vw;
+  margin: 0 auto;
 }
 ol, ul {
 	list-style: none;
@@ -74,10 +86,58 @@ table {
 /* End of Reset */
 
 /* Default tag styling */
+h1 {
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+  font-size: var(--size-0);
+}
+
+h4 {
+  color: var(--color-white);
+}
+
+span {
+  color: var(--color-dark);
+  font-family: var(--font-inco);
+}
 
 a {
   color: var(--color-gray1);
   font-family: var(--font-inco);
 }
 
+p {
+  color: var(--color-dark);
+  font-family: var(--font-inco);
+}
 
+h1, h4, .links > a, .websites div > a {
+  font-weight: 900;
+}
+
+h4, .links > a, header p, .websites div > a {
+  font-size: var(--size-1);
+} 
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.websites div > a {
+  padding-right: 20px;
+}
+
+.logo-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+
+.logo {
+  width: 80px;
+}
