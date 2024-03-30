@@ -64,9 +64,8 @@ body {
   font-size: 1rem;
   overflow-x: hidden;
   background-color: var(--color-black);
-  width: 90vw;
-  margin: 0 auto;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -107,7 +106,7 @@ a {
 }
 
 p {
-  color: var(--color-dark);
+  color: var(--color-gray2);
   font-family: var(--font-inco);
 }
 
@@ -118,6 +117,25 @@ h1, h4, .links > a, .websites div > a {
 h4, .links > a, header p, .websites div > a {
   font-size: var(--size-1);
 } 
+
+/* Structure Styling */
+.site {
+  display: grid;
+  grid-template-columns: 1fr 320px 1fr;
+}
+
+/* Decor styling */
+.decor img {
+  position: fixed;
+  height: 100vh;
+  justify-content: space-between;
+  opacity: 0.5;
+}
+
+.decor:last-child img {
+  transform: scaleX(-1);
+  right: 0;
+}
 
 .links {
   display: flex;
@@ -140,4 +158,26 @@ h4, .links > a, header p, .websites div > a {
 
 .logo {
   width: 80px;
+}
+
+.designs div {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.designs div img {
+  width: 100px;
+  height: 100px;
+  object-fit: scale-down;
+}
+
+.designs div img::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  padding: 40px;
+  background-color: var(--color-white);
+  border-radius: var(--curved);
 }
