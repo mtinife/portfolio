@@ -23,13 +23,23 @@
   --size-2: 1.25em;
   --size-3: 1.125em;
 
+  /* Font Weight */
+  --weight-thin: 100;
+  --weight-regular: 300;
+  --weight-bold: 700;
+  --weight-black: 900;
+
   --curved: 6px;
 
   --width-container: 320px;
 
   --top-spacing: 100px;
-  --mid-spacing: 60px;
+  --mid-spacing: 40px;
+  --small-spacing: 10px;
   --bottom-spacing: 100px;
+  --bottom-small-spacing: 30px;
+  
+  --gap: 20px;
 }
 
 /* CSS RESET */
@@ -70,6 +80,8 @@ body {
   font-size: 1rem;
   overflow-x: hidden;
   background-color: var(--color-black);
+  background-color: #0d0d0d;
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
 }
 
 ol, ul {
@@ -95,10 +107,13 @@ h1 {
   color: var(--color-white);
   font-family: var(--font-roboto);
   font-size: var(--size-0);
+  padding-bottom: var(--bottom-small-spacing);
+  line-height: 1.1;
 }
 
 h4 {
   color: var(--color-white);
+  padding-top: var(--bottom-small-spacing);
 }
 
 span {
@@ -114,25 +129,31 @@ a {
 p {
   color: var(--color-gray2);
   font-family: var(--font-inco);
+  padding: var(--small-spacing) 0;
+  line-height: 1.2;
 }
 
 h1, h4, .links > a, .websites div > a {
-  font-weight: 900;
+  font-weight: var(--weight-black);
 }
 
-h4, .links > a, header p, .websites div > a {
+h4, .links > a, .websites div > a {
   font-size: var(--size-1);
 } 
 
 /* Structure Styling */
 .site {
   display: grid;
-  grid-template-columns: 1fr 320px 1fr;
+  grid-template-columns: 1fr var(--width-container) 1fr;
 }
 
 /* Spacing */
 .top-spacing {
   padding-top: var(--top-spacing);
+}
+
+.top-small-spacing {
+  padding-top: var(--top-small-spacing);
 }
 
 .mid-spacing {
@@ -148,7 +169,6 @@ h4, .links > a, header p, .websites div > a {
   position: fixed;
   height: 100vh;
   justify-content: space-between;
-  opacity: 0.7;
   z-index: -1;
 }
 
@@ -161,13 +181,63 @@ h4, .links > a, header p, .websites div > a {
   right: 0;
 }
 
+header div p {
+  color: var(--color-dark);
+  font-size: var(--size-3);
+}
+
 .links {
   display: flex;
   justify-content: space-between;
 }
 
+.websites div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: var(--width-container);
+}
+
 .websites div > a {
   padding-right: 20px;
+}
+
+.websites h1 {
+  padding-top: var(--bottom-small-spacing);
+}
+
+/* Tooltip Styles */
+.tooltip-container {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 220px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 15px;
+}
+
+.tooltip-container:hover .tooltip {
+  top: -200px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .logo-container {
@@ -182,6 +252,11 @@ h4, .links > a, header p, .websites div > a {
 
 .logo {
   width: 80px;
+}
+
+footer div .logo {
+  width: 100px;
+  filter: grayscale(1);
 }
 
 .designs .designs-icons {
@@ -204,5 +279,54 @@ h4, .links > a, header p, .websites div > a {
 }
 
 .hero-sub-text {
-  font-size: 0.125 i !important;
+  font-size: 0.625em;
+  font-family: var(--font-inco) !important;
+  font-weight: var(--weight-regular);
+}
+
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.breakdown p {
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+}
+
+.breakdown p > span {
+  font-weight: var(--weight-regular);
+  font-size: 0.8em;
+}
+
+footer {
+  display: grid;
+  gap: calc(var(--gap) * 2);
+}
+
+footer div p {
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+}
+
+footer div p > span {
+  font-weight: var(--weight-regular);
+  font-size: 0.8em;
+}
+
+footer div:nth-child(3) article, footer .copyright {
+  color: var(--color-dark);
+  font-family: var(--font-inco);
+  font-weight: var(--weight-regular);
+  font-size: 1em;
+}
+
+footer div a {
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+}
+
+footer .icons {
+  font-size: 1.4em;
 }
