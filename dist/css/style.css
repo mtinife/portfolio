@@ -80,8 +80,7 @@ body {
   font-size: 1rem;
   overflow-x: hidden;
   background-color: var(--color-black);
-  background-color: #0d0d0d;
-  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  width: 100%;
 }
 
 ol, ul {
@@ -145,6 +144,8 @@ h4, .links > a, .websites div > a {
 .site {
   display: grid;
   grid-template-columns: 1fr var(--width-container) 1fr;
+  width: var(--width-container);
+  margin: 0 auto;
 }
 
 /* Spacing */
@@ -165,22 +166,6 @@ h4, .links > a, .websites div > a {
 }
 
 /* Decor styling */
-.decor img {
-  position: fixed;
-  height: 100vh;
-  justify-content: space-between;
-  z-index: -1;
-}
-
-.decor:first-child img {
-  left: 0;
-}
-
-.decor:last-child img {
-  transform: scaleX(-1);
-  right: 0;
-}
-
 header div p {
   color: var(--color-dark);
   font-size: var(--size-3);
@@ -217,7 +202,7 @@ header div p {
   border-radius: 10px;
 }
 
-.tooltip {
+.tooltip-web {
   position: absolute;
   top: 0;
   left: 50%;
@@ -233,11 +218,56 @@ header div p {
   border-radius: 15px;
 }
 
-.tooltip-container:hover .tooltip {
+.tooltip-container:hover .tooltip-web {
   top: -200px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
 }
 
 .logo-container {
