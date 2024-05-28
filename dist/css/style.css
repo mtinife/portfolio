@@ -142,10 +142,20 @@ h4, .links > a, .websites div > a {
 
 /* Structure Styling */
 .site {
-  display: grid;
-  grid-template-columns: 1fr var(--width-container) 1fr;
-  width: var(--width-container);
   margin: 0 auto;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 300px) {
+  .site {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .site {
+    width: var(--width-container);
+  }
 }
 
 /* Spacing */
@@ -256,7 +266,7 @@ header div p {
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-  opacity: 1;
+  visibility: visible;
 }
 
 .tooltip .tooltiptext::after {
@@ -289,6 +299,15 @@ footer div .logo {
   filter: grayscale(1);
 }
 
+@media screen and (min-width: 480px) {
+  .designs-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: calc(var(--gap) - 10px);
+  }
+}
+
 .designs .designs-icons {
   display: grid;
   grid-template-rows: 100px;
@@ -302,10 +321,22 @@ footer div .logo {
   object-fit: scale-down;
 }
 
-.designs div div img {
+.designs-logo-img {
   padding: 20px;
   background-color: var(--color-white);
   border-radius: var(--curved);
+}
+
+.designs-logo-name {
+  color: var(--color-gray2);
+  padding-bottom: 5px;
+  font-size: 12px;
+  line-height: normal;
+  display: none;
+}
+
+.designs-logo:hover, .designs-logo-span {
+  display: block;
 }
 
 .hero-sub-text {
