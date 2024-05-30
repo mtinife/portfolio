@@ -33,7 +33,7 @@
 
   --width-container: 320px;
 
-  --top-spacing: 100px;
+  --top-spacing: 40px;
   --mid-spacing: 40px;
   --small-spacing: 10px;
   --bottom-spacing: 100px;
@@ -345,6 +345,38 @@ footer div .logo {
   font-weight: var(--weight-regular);
 }
 
+.tagcloud {
+    font-size: 16px;
+    width: 100% !important;
+    height: 220px !important;
+}
+
+.tagcloud--item {
+    padding: 2px 4px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.tagcloud--item:hover {
+    background-color: rgba(0, 0, 0, .1);
+    border: 1px solid #333;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: 1 !important;
+    z-index: 100 !important;
+}
+
+.light .tagcloud--item {
+    color: #fff;
+}
+
+.light .tagcloud--item:hover {
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid #fff;
+}
+
 .breakdown {
   display: flex;
   flex-direction: column;
@@ -361,33 +393,37 @@ footer div .logo {
   font-size: 0.8em;
 }
 
-footer {
+.footer-section {
   display: grid;
   gap: calc(var(--gap) * 2);
 }
 
-footer div p {
+.footer-section div p {
   color: var(--color-white);
   font-weight: var(--weight-bold);
 }
 
-footer div p > span {
+.footer-section img {
+  filter: grayscale(1);
+}
+
+.footer-section div p > span {
   font-weight: var(--weight-regular);
   font-size: 0.8em;
 }
 
-footer div:nth-child(3) article, footer .copyright {
+.footer-section div:nth-child(3) article, .footer-section .copyright {
   color: var(--color-dark);
   font-family: var(--font-inco);
   font-weight: var(--weight-regular);
   font-size: 1em;
 }
 
-footer div a {
+.footer-section div a {
   color: var(--color-white);
   font-weight: var(--weight-bold);
 }
 
-footer .icons {
+.footer-section .icons {
   font-size: 1.4em;
 }
