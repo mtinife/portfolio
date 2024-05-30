@@ -1,22 +1,24 @@
-var texts = [
-	'JavaScript',
-	'CSS',
-	'HTML',
-	'C',
-	'C++',
-	'React',
-	'Python',
-	'Java',
-	'git',
-	'django',
-	'Node.js',
-	'OpenCV',
-	'GCP',
-	'MySQL',
-	'jQuery',
-];
-var tc = TagCloud('.content', texts);
-console.log(tc);
+function tagCloud() {
+	var texts = [
+		'JavaScript',
+		'CSS',
+		'HTML',
+		'C',
+		'C++',
+		'React',
+		'Python',
+		'Java',
+		'git',
+		'django',
+		'Node.js',
+		'OpenCV',
+		'GCP',
+		'MySQL',
+		'jQuery',
+	];
+	var tc = TagCloud('.content', texts);
+	console.log(tc);
+}
 
 function footerElm() {
 	let footer = document.querySelector('footer');
@@ -29,6 +31,7 @@ function footerElm() {
 }
 
 function init() {
+	tagCloud();
 	footerElm();
 }
 
