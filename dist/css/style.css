@@ -9,6 +9,7 @@
 
   /* Space Sizes */
   --float-space: 6px;
+  --space-0: 20px;
   --space-1: 40px;
   --space-2: 5em;
   --diamond-size: 120px;
@@ -31,7 +32,9 @@
 
   --curved: 6px;
 
-  --width-container: 320px;
+  --border-radius: 6px;
+
+  --width-container: 340px;
 
   --top-spacing: 40px;
   --mid-spacing: 40px;
@@ -75,7 +78,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.3;
   font-family: var(--font-roboto);
   font-size: 1rem;
   overflow-x: hidden;
@@ -140,10 +143,57 @@ h4, .links > a, .websites div > a {
   font-size: var(--size-1);
 } 
 
+/* Background Icons */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.background .background-group {
+  position: relative;
+  transform: rotate(-30deg);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 0.5em;
+  font-size: 4em;
+  width: 200vw;
+}
+
+.iconContainer i {
+  cursor: default;
+  user-select: none;
+  transition: 2s;
+  color: transparent;
+  opacity: 0.35;
+  -webkit-text-stroke: 1px #494949;
+}
+
 /* Structure Styling */
 .site {
-  margin: 0 auto;
+  margin: var(--space-0) auto;
+  padding: 0 20px;
   overflow-x: hidden;
+  transition: 2s;
+/* From https://css.glass */
+  background: rgba(5, 5, 5, 0.11);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  /* box-shadow: rgba(0, 0, 0) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 @media screen and (min-width: 300px) {
