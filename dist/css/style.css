@@ -434,6 +434,10 @@ text-decoration: none;
   box-shadow: 0 0.5rem 1rem -0.25rem #2f0000;
 }
 
+.tag-list li i {
+  font-size: xx-large;
+}
+
 .roles-text {
   text-transform: capitalize;
   font-family: var(--font-gotham);
