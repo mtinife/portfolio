@@ -1,34 +1,34 @@
 function tagCloud() {
-	var texts = [
-		'JavaScript',
-		'CSS',
-		'HTML',
-		'C',
-		'C++',
-		'VueJS',
-		'React JS',
-		'Python',
-		'Java',
-		'git',
-		'Vim',
-		'Django',
-		'Node.js',
-		'MySQL',
-		'jQuery',
-		'AWS',
-		'PHP',
-	];
-	var tc = TagCloud('.content', texts);
-	console.log(tc);
+  var texts = [
+    'JavaScript',
+    'CSS',
+    'HTML',
+    'C',
+    'C++',
+    'VueJS',
+    'React JS',
+    'Python',
+    'Java',
+    'git',
+    'Vim',
+    'Django',
+    'Node.js',
+    'MySQL',
+    'jQuery',
+    'AWS',
+    'PHP',
+  ];
+  var tc = TagCloud('.content', texts);
+  console.log(tc);
 }
 
 function copyrightElm() {
-	let copyright = document.querySelector('.main__text__copyright');
-	let paraElm = document.createElement('p');
-	let date = new Date();
-	let getCurrentYear = date.getFullYear();
-	paraElm.innerHTML = `\u00A9 ${getCurrentYear} - All Rights Reserved.`;
-	copyright.appendChild(paraElm);
+  let copyright = document.querySelector('.main__text__copyright');
+  let paraElm = document.createElement('p');
+  let date = new Date();
+  let getCurrentYear = date.getFullYear();
+  paraElm.innerHTML = `\u00A9 ${getCurrentYear} - All Rights Reserved.`;
+  copyright.appendChild(paraElm);
 }
 
 function addExpYears() {
@@ -52,7 +52,7 @@ function typeWriter() {
   const exp = document.getElementById('typewriter__exp');
   const lang = document.getElementById('typewriter__lang');
 
-  const typewriter1 = new Typewriter (roles, {
+  const typewriter1 = new Typewriter(roles, {
     loop: true,
     delay: 75,
   })
@@ -107,12 +107,45 @@ function infinitScroll() {
   }
 }
 
+function accordion() {
+  const autoClose = true;
+
+  document.querySelectorAll('.acc-item').forEach(el => {
+    const summary = el.querySelector('summary');
+    const wrapper = el.querySelector('.content-wrapper');
+
+    summary.onclick = (e) => {
+      e.preventDefault();
+      const isOpen = el.classList.contains('is-open');
+
+      if (isOpen) {
+        el.classList.remove('is-open');
+        wrapper.style.height = '0px';
+        setTimeout(() => el.open = false, 310);
+      } else {
+        if (autoClose) {
+          document.querySelectorAll('.acc-item.is-open').forEach(openItem => {
+            openItem.classList.remove('is-open');
+            openItem.querySelector('.content-wrapper').style.height = '0px';
+            setTimeout(() => openItem.open = false, 310);
+          });
+        }
+        el.open = true;
+        el.classList.add('is-open');
+        wrapper.style.height = wrapper.querySelector('.content-body').scrollHeight + 'px';
+      }
+    };
+  });
+
+}
+
 function init() {
-	tagCloud();
+  tagCloud();
   typeWriter();
   infinitScroll();
   expYearsDisplay();
   copyrightElm();
+  accordion();
 }
 
 init();
