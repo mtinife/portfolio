@@ -139,6 +139,39 @@ function accordion() {
 
 }
 
+function scrollTopAction() {
+  const scrollTopButton = document.querySelector(".scrollTopSection");
+
+  window.onscroll = () => { scrollAction() };
+
+  function scrollAction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollTopButton.style.display = "block";
+    } else {
+      scrollTopButton.style.display = "none";
+    }
+  }
+}
+
+function topAction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function sendMail() {
+  let parms = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  }
+
+  emailjs.send("service_kjb9e78", "template_3cnc1eq", parms).then(
+    alert("Email Sent")
+
+  )
+}
+
 function init() {
   tagCloud();
   typeWriter();
@@ -146,6 +179,7 @@ function init() {
   expYearsDisplay();
   copyrightElm();
   accordion();
+  scrollTopAction();
 }
 
 init();

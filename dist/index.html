@@ -27,7 +27,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "yLPJMBaWiZZ-aoUfM",
+      });
+    })();
+  </script>
 
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -39,12 +49,12 @@
         <div class="navicon">
           <div></div>
         </div>
-        <a href="/">Home</a>
-        <a href="/expertises">Expertise</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/qna">Q&A</a>
-        <a href="/contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#expertises">Expertise</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#qna">Q&A</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
     <div style="display: flex;align-items: center;">
@@ -52,7 +62,7 @@
     </div>
   </header>
   <main>
-    <section class="container frontpage space-top">
+    <section id="home" class="container frontpage space-top">
       <div class="bg-text">
         <p>software</p>
         <h1 class="text-gradient">engineer</h1>
@@ -69,7 +79,7 @@
         <div>
           <div>
             <p>5+ Years of Expertise in Software Engineering, Development, System Design and Team Management.</p>
-            <a class="frontpage-content-cta" href="">let's discuss<span>
+            <a class="frontpage-content-cta" href="/contact">let's discuss<span>
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
                   <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
                 </svg></span></a>
@@ -77,7 +87,7 @@
         </div>
       </div>
     </section>
-    <section class="container expertises space-top-1">
+    <section id="expertises" class="container expertises space-top-1">
       <div class="bg-text2">
         <h1 class="text-gradient">expertises</h1>
         <span>areas of interest</span>
@@ -134,360 +144,398 @@
           </details>
         </div>
       </section>
-      <section class="container about space-top-1">
-        <div class="bg-text2">
-          <h1 class="text-gradient">about me</h1>
+    </section>
+    <section id="about" class="container about space-top-1">
+      <div class="bg-text2">
+        <h1 class="text-gradient">about me</h1>
+      </div>
+      <article>software engineer crafting digital experiences through system design, wireframing, prototyping,
+        development and deploy.</article>
+      <div class="about-stats">
+        <div class="about-stats-photo"><img src="./images/profilepic.jpg" /></div>
+        <div class="about-stats-content">
+          <div style="flex: 1;">
+            <h4>0<span id="expYearShowcase">5</span></h4>
+            <p>years of experience</p>
+          </div>
+          <div style="flex: 1;">
+            <h4>03</h4>
+            <p>consultations clients</p>
+          </div>
+          <div style="flex: 1;">
+            <h4>10</h4>
+            <p>total projects</p>
+          </div>
+          <a href="./documents/Micah-Tinife-Resume.docx" style="flex: 1;" class="about-cta">
+            <p>download my cv</p><span>
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+              </svg></span>
+          </a>
         </div>
-        <article>software engineer crafting digital experiences through system design, wireframing, prototyping,
-          development and deploy.</article>
-        <div class="about-stats">
-          <div class="about-stats-top">
-            <div>
-              <h4>0<span id="expYearShowcase">5</span></h4>
-              <p>years of experience</p>
-            </div>
-            <div>
-              <h4>03</h4>
-              <p>consultations clients</p>
+      </div>
+    </section>
+    <section id="projects" class="container projects space-top-1">
+      <div class="bg-text2">
+        <h1 class="text-gradient">projects</h1>
+      </div>
+      <section class="projects-works">
+        <div class="project-work">
+          <div class="project-background project-background-0">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="project-img"><img src="./images/fcc-web.png" /></div>
+          <div class="project-detail">
+            <div class="project-detail-info">
+              <h6>software engineer</h6>
+              <div>
+                <span>federal communications commission</span>
+                <a href="">
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="about-photo"><img src="./images/pic.jpg" /></div>
-          <div class="about-stats-bottom">
-            <div>
-              <h4>10</h4>
-              <p>total projects</p>
-            </div>
-            <div>
-              <h4>&#8734;</h4>
-              <p>possibilities</p>
+        </div>
+        <div class="project-work">
+          <div class="project-background project-background-1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="project-img"><img src="./images/cip-web.png" /></div>
+          <div class="project-detail">
+            <div class="project-detail-info">
+              <h6>Web Developer</h6>
+              <div>
+                <span>federal communications commission</span>
+                <a href="">
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="about-cta">
-          <p>download my cv</p><span>
-            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-              <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-            </svg></span>
+        <div class="project-work">
+          <div class="project-background project-background-2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="project-img"><img src="./images/2mm-web.png" /></div>
+          <div class="project-detail">
+            <div class="project-detail-info">
+              <h6>software engineer</h6>
+              <div>
+                <span>federal communications commission</span>
+                <a href="">
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-work">
+          <div class="project-background project-background-3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="project-img"><img src="./images/face-detection-app.jpg" /></div>
+          <div class="project-detail">
+            <div class="project-detail-info">
+              <h6>software engineer</h6>
+              <div>
+                <span>federal communications commission</span>
+                <a href="">
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="container projects space-top-1">
-        <div class="bg-text2">
-          <h1 class="text-gradient">projects</h1>
+      <section class="rowing">
+        <h5>company's worked for</h5>
+        <div class="scroller" data-direction="right" data-speed="slow">
+          <ul class="tag-list scroller__inner">
+            <li><img src="./images/fcc-logo.png" alt=""></li>
+            <li><img src="./images/evoke.svg" alt=""></li>
+            <li><img src="./images/beacon-hill.jpg" alt=""></li>
+            <li><img src="./images/cip2.png" alt=""></li>
+            <li><img src="./images/belcan.jpg" alt=""></li>
+            <li><img src="./images/fcc-logo.png" alt=""></li>
+            <li><img src="./images/evoke.svg" alt=""></li>
+            <li><img src="./images/beacon-hill.jpg" alt=""></li>
+            <li><img src="./images/cip2.png" alt=""></li>
+            <li><img src="./images/belcan.jpg" alt=""></li>
+          </ul>
         </div>
-        <section class="projects-works">
-          <div class="project-work">
-            <div class="project-background project-background-0">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="project-img"><img src="./images/fcc-web.png" /></div>
-            <div class="project-detail">
-              <div>
-                <a href="">software</a><span>
-                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                    clip-rule="evenodd">
-                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                  </svg></span>
-              </div>
-            </div>
-          </div>
-          <div class="project-work">
-            <div class="project-background project-background-1">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="project-img"><img src="./images/cip-web.png" /></div>
-            <div class="project-detail">
-              <div>
-                <a href="">software</a><span>
-                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                    clip-rule="evenodd">
-                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                  </svg></span>
-              </div>
-            </div>
-          </div>
-          <div class="project-work">
-            <div class="project-background project-background-2">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="project-img"><img src="./images/2mm-web.png" /></div>
-            <div class="project-detail">
-              <div>
-                <a href="">software</a><span>
-                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                    clip-rule="evenodd">
-                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                  </svg></span>
-              </div>
-            </div>
-          </div>
-          <div class="project-work">
-            <div class="project-background project-background-3">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="project-img"><img src="./images/face-detection-app.jpg" /></div>
-            <div class="project-detail">
-              <div>
-                <a href="">software</a><span>
-                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                    clip-rule="evenodd">
-                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
-                  </svg></span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="rowing">
-          <h5>company's worked for</h5>
-          <div class="scroller" data-direction="right" data-speed="slow">
-            <ul class="tag-list scroller__inner">
-              <li><img src="./images/fcc-logo.png" alt=""></li>
-              <li><img src="./images/evoke.svg" alt=""></li>
-              <li><img src="./images/beacon-hill.jpg" alt=""></li>
-              <li><img src="./images/cip2.png" alt=""></li>
-              <li><img src="./images/belcan.jpg" alt=""></li>
-              <li><img src="./images/fcc-logo.png" alt=""></li>
-              <li><img src="./images/evoke.svg" alt=""></li>
-              <li><img src="./images/beacon-hill.jpg" alt=""></li>
-              <li><img src="./images/cip2.png" alt=""></li>
-              <li><img src="./images/belcan.jpg" alt=""></li>
-            </ul>
-          </div>
-        </section>
-        <section class="rowing1">
-          <h5>technologies used</h5>
-          <div class="scroller" data-direction="right" data-speed="fast">
-            <ul class="tag-list scroller__inner">
-              <li><i class="devicon-html5-plain colored"></i></li>
-              <li><i class="devicon-css3-plain colored"></i></li>
-              <li><i class="devicon-javascript-plain colored"></i></li>
-              <li><i class="devicon-react-original colored"></i>
-              <li><i class="devicon-vuejs-plain colored"></i></li>
-              <li><i class="devicon-angularjs-plain colored"></i></li>
-              <li><i class="devicon-mysql-original colored"></i></li>
-              <li><i class="devicon-amazonwebservices-plain-wordmark colored"></i></li>
-              <li><i class="devicon-cplusplus-plain colored"></i></li>
-              <li><i class="devicon-nodejs-plain colored"></i></li>
-              <li><i class="devicon-python-plain colored"></i></li>
-              <li><i class="devicon-django-plain colored"></i></li>
-              <li><i class="devicon-linux-plain colored"></i></li>
-            </ul>
-          </div>
-        </section>
       </section>
-      <section class="container qna space-top-1">
-        <div class="bg-text2">
-          <h1 class="text-gradient">q&a</h1>
+      <section class="rowing1">
+        <h5>technologies used</h5>
+        <div class="scroller" data-direction="right" data-speed="fast">
+          <ul class="tag-list scroller__inner">
+            <li><i class="devicon-html5-plain colored"></i></li>
+            <li><i class="devicon-css3-plain colored"></i></li>
+            <li><i class="devicon-javascript-plain colored"></i></li>
+            <li><i class="devicon-react-original colored"></i>
+            <li><i class="devicon-vuejs-plain colored"></i></li>
+            <li><i class="devicon-angularjs-plain colored"></i></li>
+            <li><i class="devicon-mysql-original colored"></i></li>
+            <li><i class="devicon-amazonwebservices-plain-wordmark colored"></i></li>
+            <li><i class="devicon-cplusplus-plain colored"></i></li>
+            <li><i class="devicon-nodejs-plain colored"></i></li>
+            <li><i class="devicon-python-plain colored"></i></li>
+            <li><i class="devicon-django-plain colored"></i></li>
+            <li><i class="devicon-linux-plain colored"></i></li>
+          </ul>
         </div>
+      </section>
+    </section>
+    <section id="designs" class="container designs space-top-1">
+      <div class="bg-text2">
+        <h1 class="text-gradient">graphic designs</h1>
+      </div>
+      <section class="rowing">
+        <h5>logo designs</h5>
+        <div class="scroller" data-direction="left" data-speed="fast">
+          <ul class="tag-list scroller__inner">
+            <li><img src="./images/g10.png" alt=""></li>
+            <li><img src="./images/onezero.png" alt=""></li>
+            <li><img src="./images/locn.png" alt=""></li>
+            <li><img src=" ./images/fightgrounds.png" alt=""></li>
+            <li><img src="./images/freeka.png" alt=""></li>
+            <li><img src="./images/samsphoto.png" alt=""></li>
+            <li><img src="./images/papelion.png" alt=""></li>
+            <li><img src="./images/mj-main-logo.png" alt=""></li>
+            <li><img src="./images/DIIT.png" alt=""></li>
+          </ul>
+      </section>
+    </section>
+    <section id="qna" class="container qna space-top-1">
+      <div class="bg-text2">
+        <h1 class="text-gradient">q&a</h1>
+      </div>
+      <section>
+        <div class="accordion-group">
+          <details class="acc-item borderline-top">
+            <summary>
+              <span class="accordion-item-title-1">What technologies do you work with?</span>
+              <span class="acc-icon">+</span>
+            </summary>
+            <div class="content-wrapper">
+              <div class="content-body accordion-item-article">
+                I have experience building applications across the full technology stack, including modern frontend
+                frameworks, backend services, RESTful APIs, cloud platforms, databases, embedded systems, and DevOps
+                tools. I continuously learn and adopt technologies that best fit the project's requirements.
+              </div>
+            </div>
+          </details>
+          <details class="acc-item borderline-top">
+            <summary>
+              <span class="accordion-item-title-1">What types of projects do you specialize in?</span>
+              <span class="acc-icon">+</span>
+            </summary>
+            <div class="content-wrapper">
+              <div class="content-body accordion-item-article">
+                I specialize in web applications, enterprise software, embedded systems, system integrations,
+                automation solutions, and custom software designed to solve complex business and technical challenges.
+              </div>
+            </div>
+          </details>
+          <details class="acc-item borderline-top">
+            <summary>
+              <span class="accordion-item-title-1">Can you help with technical consulting?</span>
+              <span class="acc-icon">+</span>
+            </summary>
+            <div class="content-wrapper">
+              <div class="content-body accordion-item-article">
+                Absolutely. I work with businesses and teams to evaluate technical requirements, recommend solution
+                architectures, improve existing systems, and provide guidance throughout the software development
+                lifecycle.
+              </div>
+            </div>
+          </details>
+          <details class="acc-item borderline-top">
+            <summary>
+              <span class="accordion-item-title-1">What is your development process?</span>
+              <span class="acc-icon">+</span>
+            </summary>
+            <div class="content-wrapper">
+              <div class="content-body accordion-item-article">
+                Every project begins with understanding the requirements and business goals. From there, I design the
+                solution, develop and test the implementation, gather feedback, and iterate to ensure the final
+                product is reliable, maintainable, and aligned with project objectives.
+              </div>
+            </div>
+          </details>
+          <details class="acc-item borderline-top">
+            <summary>
+              <span class="accordion-item-title-1">Do you work with existing systems?</span>
+              <span class="acc-icon">+</span>
+            </summary>
+            <div class="content-wrapper">
+              <div class="content-body accordion-item-article">
+                Yes. Whether it's modernizing legacy applications, integrating third-party services, optimizing
+                performance, or adding new features, I can work within existing technology stacks while minimizing
+                disruption.
+              </div>
+            </div>
+          </details>
+          <details class="acc-item borderline-top">
+            <summary>
+              <span class="accordion-item-title-1">Are you available for freelance or contract work?</span>
+              <span class="acc-icon">+</span>
+            </summary>
+            <div class="content-wrapper">
+              <div class="content-body accordion-item-article">
+                Yes. I'm available for freelance projects, contract engagements, technical consulting, and long-term
+                collaborations depending on project scope and availability.
+              </div>
+            </div>
+          </details>
+          <details class="acc-item borderline-top">
+            <summary>
+              <span class="accordion-item-title-1">Can you build custom software for my business?</span>
+              <span class="acc-icon">+</span>
+            </summary>
+            <div class="content-wrapper">
+              <div class="content-body accordion-item-article">
+                Every project begins with understanding the requirements and business goals. From there, I design the
+                solution, develop and test the implementation, gather feedback, and iterate to ensure the final
+                product is reliable, maintainable, and aligned with project objectives.
+              </div>
+            </div>
+          </details>
 
-        <section>
-          <div class="accordion-group">
-            <details class="acc-item borderline-top">
-              <summary>
-                <span class="accordion-item-title-1">What technologies do you work with?</span>
-                <span class="acc-icon">+</span>
-              </summary>
-              <div class="content-wrapper">
-                <div class="content-body accordion-item-article">
-                  I have experience building applications across the full technology stack, including modern frontend
-                  frameworks, backend services, RESTful APIs, cloud platforms, databases, embedded systems, and DevOps
-                  tools. I continuously learn and adopt technologies that best fit the project's requirements.
-                </div>
-              </div>
-            </details>
-            <details class="acc-item borderline-top">
-              <summary>
-                <span class="accordion-item-title-1">What types of projects do you specialize in?</span>
-                <span class="acc-icon">+</span>
-              </summary>
-              <div class="content-wrapper">
-                <div class="content-body accordion-item-article">
-                  I specialize in web applications, enterprise software, embedded systems, system integrations,
-                  automation solutions, and custom software designed to solve complex business and technical challenges.
-                </div>
-              </div>
-            </details>
-            <details class="acc-item borderline-top">
-              <summary>
-                <span class="accordion-item-title-1">Can you help with technical consulting?</span>
-                <span class="acc-icon">+</span>
-              </summary>
-              <div class="content-wrapper">
-                <div class="content-body accordion-item-article">
-                  Absolutely. I work with businesses and teams to evaluate technical requirements, recommend solution
-                  architectures, improve existing systems, and provide guidance throughout the software development
-                  lifecycle.
-                </div>
-              </div>
-            </details>
-            <details class="acc-item borderline-top">
-              <summary>
-                <span class="accordion-item-title-1">What is your development process?</span>
-                <span class="acc-icon">+</span>
-              </summary>
-              <div class="content-wrapper">
-                <div class="content-body accordion-item-article">
-                  Every project begins with understanding the requirements and business goals. From there, I design the
-                  solution, develop and test the implementation, gather feedback, and iterate to ensure the final
-                  product is reliable, maintainable, and aligned with project objectives.
-                </div>
-              </div>
-            </details>
-            <details class="acc-item borderline-top">
-              <summary>
-                <span class="accordion-item-title-1">Do you work with existing systems?</span>
-                <span class="acc-icon">+</span>
-              </summary>
-              <div class="content-wrapper">
-                <div class="content-body accordion-item-article">
-                  Yes. Whether it's modernizing legacy applications, integrating third-party services, optimizing
-                  performance, or adding new features, I can work within existing technology stacks while minimizing
-                  disruption.
-                </div>
-              </div>
-            </details>
-            <details class="acc-item borderline-top">
-              <summary>
-                <span class="accordion-item-title-1">Are you available for freelance or contract work?</span>
-                <span class="acc-icon">+</span>
-              </summary>
-              <div class="content-wrapper">
-                <div class="content-body accordion-item-article">
-                  Yes. I'm available for freelance projects, contract engagements, technical consulting, and long-term
-                  collaborations depending on project scope and availability.
-                </div>
-              </div>
-            </details>
-            <details class="acc-item borderline-top">
-              <summary>
-                <span class="accordion-item-title-1">Can you build custom software for my business?</span>
-                <span class="acc-icon">+</span>
-              </summary>
-              <div class="content-wrapper">
-                <div class="content-body accordion-item-article">
-                  Every project begins with understanding the requirements and business goals. From there, I design the
-                  solution, develop and test the implementation, gather feedback, and iterate to ensure the final
-                  product is reliable, maintainable, and aligned with project objectives.
-                </div>
-              </div>
-            </details>
-
-          </div>
-        </section>
-
-      </section>
-      <section class="container contact space-top-1">
-        <div class="bg-text2">
-          <h1 class="text-gradient">contact</h1>
-        </div>
-        <section class="contact-section">
-          <div class="logo-contact-piece"><img src="./images/g182.png" /></div>
-          <div class="contact-form">
-            <h5>let's talk</h5>
-            <form>
-              <div class="form-group">
-                <label class="form-label">full name </label>
-                <input required="required" class="form-control" placeholder="your name here" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">email </label>
-                <input required="required" class="form-control" placeholder="email address" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">subject </label>
-                <input required="required" class="form-control" placeholder="write subject here" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">message </label>
-                <textarea required="required" class="form-control" placeholder="your message here"></textarea>
-              </div>
-              <div>
-                <button>send message</button>
-              </div>
-            </form>
-          </div>
-        </section>
-      </section>
-      <section class="container space-top-1">
-        <div class="bg-text3">
-          <h1 class="text-gradient">micah tinife</h1>
         </div>
       </section>
+
+    </section>
+    <section id="contact" class="container contact space-top-1">
+      <div class="bg-text2">
+        <h1 class="text-gradient">contact</h1>
+      </div>
+      <section class="contact-section">
+        <div class="logo-contact-piece"><img src="./images/g182.png" /></div>
+        <div class="contact-form">
+          <h5>let's talk</h5>
+          <form>
+            <div class="form-group">
+              <label class="form-label">full name </label>
+              <input required="required" id="name" class="form-control" placeholder="your name here" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">email </label>
+              <input required="required" id="email" class="form-control" placeholder="email address" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">subject </label>
+              <input required="required" id="subject" class="form-control" placeholder="write subject here" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">message </label>
+              <textarea required="required" id="message" class="form-control"
+                placeholder="your message here"></textarea>
+            </div>
+            <div>
+              <button type="submit" onclick="sendMail()">send message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+    <section class="container space-top-1">
+      <div class="bg-text3">
+        <h1 class="text-gradient">micah tinife</h1>
+      </div>
+    </section>
+    <div class="scrollTopSection">
+      <button onclick="topAction()" id="scrollTopButton" title="Go to top">Top</button>
+    </div>
   </main>
   <footer>
     <div>
@@ -496,86 +544,6 @@
     <div>a software engineer<br>based in washington d.c.</div>
     <div class="main__text__copyright"></span></div>
   </footer>
-  <!--
-  <div class="mmt__bg">
-  </div>
-  <main class="mmt__content">
-    <section class="mmt__content__home">
-      <img src="./images/logo.svg" alt="">
-      <span><i class="ri-close-large-fill"></i></span>
-      <div class="mmt__content__text">
-        <div>
-          <h1>Software Engineer Portfolio</h1>
-          <p class="main__text__name">micah m. tinife</p>
-          <p class="main__text__years"><span id="expYearShowcase">5</span> Years of Experience</p>
-        </div>
-        <div class="main-socials">
-          <a href=""><i class="devicon-linkedin-plain"></i></a>
-          <a href=""><i class="devicon-github-original"></i></a>
-        </div>
-        <div class="main__text__copyright"></span></div>
-      </div>
-    </section>
-    <section class="mmt__content__roles">
-      <div><span class="mmt__header">I am a</span>
-        <p class="roles-text" id="typewriter__role"></p>
-      </div>
-    </section>
-    <section class="mmt__content__companies">
-      <h2>Companies worked for</h2>
-      <div class="scroller" data-direction="right" data-speed="slow">
-        <ul class="tag-list scroller__inner">
-          <li><img src="./images/fcc-logo.png" alt=""></li>
-          <li><img src="./images/evoke.svg" alt=""></li>
-          <li><img src="./images/beacon-hill.jpg" alt=""></li>
-          <li><img src="./images/cip2.png" alt=""></li>
-          <li><img src="./images/belcan.jpg" alt=""></li>
-          <li><img src="./images/fcc-logo.png" alt=""></li>
-          <li><img src="./images/evoke.svg" alt=""></li>
-          <li><img src="./images/beacon-hill.jpg" alt=""></li>
-          <li><img src="./images/cip2.png" alt=""></li>
-          <li><img src="./images/belcan.jpg" alt=""></li>
-        </ul>
-      </div>
-    </section>
-    <section class="mmt__content__designs">
-      <h2>Latest Designs</h2>
-      <div class="scroller" data-direction="left" data-speed="slow">
-        <ul class="tag-list scroller__inner">
-          <li><img src="./images/logo.png" title="Micah Tinife Crest Logo" alt="Micah Tinife Crest Logo"></li>
-          <li><img src="./images/locn.png" title="Locs With Cyn Logo" alt="Locs with Cyn business logo"></li>
-          <li><img src="./images/mj-main-logo.png" alt=""></li>
-          <li><img src="./images/fightgrounds.png" alt=""></li>
-          <li><img src="./images/freeka.png" alt=""></li>
-          <li><img src="./images/DIIT.png" alt=""></li>
-          <li><img src="./images/onezero.png" alt=""></li>
-          <li><img src="./images/2mm.png" alt=""></li>
-          <li><img src="./images/papelion.png" alt=""></li>
-          <li><img src="./images/samsphoto.png" alt=""></li>
-      </div>
-    </section>
-    <section class="mmt_content__tech">
-      <h2>Software used</h2>
-      <div class="scroller" data-direction="right" data-speed="fast">
-        <ul class="tag-list scroller__inner">
-          <li><i class="devicon-html5-plain colored"></i></li>
-          <li><i class="devicon-css3-plain colored"></i></li>
-          <li><i class="devicon-javascript-plain colored"></i></li>
-          <li><i class="devicon-react-original colored"></i>
-          <li><i class="devicon-vuejs-plain colored"></i></li>
-          <li><i class="devicon-angularjs-plain colored"></i></li>
-          <li><i class="devicon-mysql-original colored"></i></li>
-          <li><i class="devicon-amazonwebservices-plain-wordmark colored"></i></li>
-          <li><i class="devicon-cplusplus-plain colored"></i></li>
-          <li><i class="devicon-nodejs-plain colored"></i></li>
-          <li><i class="devicon-python-plain colored"></i></li>
-          <li><i class="devicon-django-plain colored"></i></li>
-          <li><i class="devicon-linux-plain colored"></i></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  -->
   <script src="./scripts/TagCloud.min.js"></script>
   <script src="./scripts/main.js"></script>
 </body>
